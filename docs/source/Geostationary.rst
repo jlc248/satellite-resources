@@ -15,7 +15,7 @@ The `Geostationary Operational Environment Satellite R-Series <https://www.goes-
 Advanced Baseline Imager (ABI)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-ABI consists of 16 channels and passively senses data from visible, near-infrared, and longwave-infrared parts of the EM spectrum. The table summarizes some characteristics of the bands.
+ABI consists of 16 channels and passively senses emitted and reflected radiation from visible, near-infrared, and longwave-infrared parts of the EM spectrum. The table summarizes some characteristics of the bands.
 
 .. image:: ../static/images/ABI_table.png
   :width: 500
