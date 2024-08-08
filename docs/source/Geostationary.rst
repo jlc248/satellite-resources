@@ -62,6 +62,54 @@ Here is a table with handy quick reference guides for the ABI Level 1b (L1b) ban
 |    16         | Carbon dioxide           | 13.3 µm            | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/ABIQuickGuide_Band16.pdf>`_|
 +---------------+--------------------------+--------------------+-------------------------------------------------------------------------------------+
 
+Here is a table with handy quick reference guides for the ABI Level 2 products.
+
++------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Baseline Level 2 Product                 | Quick Guide                                                                                                        |
++==========================================+====================================================================================================================+
+| Aerosol Detection Product (ADP)          | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/ABIQuickGuide_BaselineAerosolDetection.pdf>`_             |
++------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Aerosol Optical Depth (AOD)              | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/ABIQuickGuide_BaselineAerosolOpticalDepth.pdf>`_          |
++------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Derived Motion Wind vectors              | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/ABIQuickGuide_BaselineDerivedMotionWinds.pdf>`_           |
++------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Derived Stability Indices                | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/ABIQuickGuide_BaselineDerivedStabilityIndices.pdf>`_      |
++------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Clear Sky Mask                           | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/ABIQuickGuide_BaselineClearSkyMask.pdf>`_                 |
++------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Cloud Phase                              | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/ABIQuickGuide_BaselineCloudPhase.pdf>`_                   |
++------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Cloud-top Height                         | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/ABIQuickGuide_BaselineCloudTopHeight.pdf>`_               |
++------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Cloud-top Temperature                    | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/ABIQuickGuide_BaselineCloudTopTemperature.pdf>`_          |
++------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Cloud-top Pressure                       | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/ABIQuickGuide_BaselineCloudTopPressure.pdf>`_             |
++------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Cloud-top Particle Size Distribution     | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/ABIQuickGuide_BaselineCloudParticleSizeDistribution.pdf>`_|
++------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Cloud Optical Depth                      | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/ABIQuickGuide_BaselineCloudOpticalDepth.pdf>`_            |
++------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Volcanic Ash Detection                   | `Link <https://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/QuickGuide_GOESR_VolcanicAsh.pdf>`_                      |
++------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| IFR Probability                          | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/QuickGuide_GOES16_IFRProbability.pdf>`_                   |
++------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Cloud Thickness                          | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/QuickGuide_GOES16_CloudThickness.pdf>`_                   |
++------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Fire/Hotspot Characterization            | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/QuickGuide_GOESR_FireHotSpot_v2.pdf>`_                    |
++------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Land Surface Temperature                 | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/QuickGuide_GOESR_LandSurfaceTemperature.pdf>`_            |
++------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Ice Concentration                        | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/QuickGuide_GOESR_IceConcentration.pdf>`_                  |
++------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Ice Surface Temperature                  | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/QuickGuide_GOESR_IceSurfaceTemperature.pdf>`_             |
++------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Ice Age/Thickness                        | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/ABIQuickGuide_GOESR_L2IceAgeIceThickness.pdf>`_           |
++------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Ice Motion                               | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/ABIQuickGuide_GOESR_L2IceMotion.pdf>`_                    |
++------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Snow Fraction                            | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/QuickGuide_GOESR_SnowFraction.pdf>`_                      |
++------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
 Modes and sectors
 ,,,,,,,,,,,,,,,,,
 
