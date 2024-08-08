@@ -121,6 +121,18 @@ The pair of images below shows the increasing pixel area further away from nadir
   :width: 800
   :alt: Two images with GOES pixel areas and sector boxes.
 
+Data Viewing
+,,,,,,,,,,,,
+
+There a number of excellent websites for GOES-16 imagery. Here are a few of my favorites:
+
+- `CIMSS CSPP Geosphere <https://geosphere.ssec.wisc.edu/#coordinate:0,0;>`_
+- `CIRA Slider <https://rammb-slider.cira.colostate.edu/>`_
+- `College of DuPage <weather.cod.edu/satrad>`_
+
+Data Access
+,,,,,,,,,,,
+
 Geostationary Lightning Mapper (GLM)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
