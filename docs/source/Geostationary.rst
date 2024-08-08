@@ -6,7 +6,7 @@ Geostationary
 GOES-R
 ------
 
-The Geostationary Operational Environment Satellite R-Series is NOAA's latest geostationary set of satellites. GOES-16, GOES-17, GOES-18, and GOES-19 are part of this series.
+The `Geostationary Operational Environment Satellite R-Series <https://www.goes-r.gov/>`_ is NOAA's latest geostationary set of satellites. GOES-16, GOES-17, GOES-18, and GOES-19 are part of this series.
 
 .. image:: ../static/images/GOES-East_geosphere.png
   :width: 500
