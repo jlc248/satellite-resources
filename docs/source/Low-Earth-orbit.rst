@@ -1,5 +1,5 @@
-Usage
-=====
+Low-Earth orbit
+===============
 
 .. _installation:
 
