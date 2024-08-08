@@ -1,10 +1,7 @@
-Welcome to Lumache's documentation!
+Weather Satellite Resources
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+This wiki provides some organization to weather satellite resources that are available. 
 
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
