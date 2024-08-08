@@ -1,8 +1,8 @@
 [build-system]
-requires = ["flit_core >=3.2,<4"]
+#requires = ["flit_core >=3.2,<4"]
 build-backend = "flit_core.buildapi"
 
 [project]
-name = "lumache"
-authors = [{name = "Graziella", email = "graziella@lumache"}]
+name = "satellite-resources"
+authors = [{name = "John Cintineo", email = "john.cintineo@noaa.gov"}]
 dynamic = ["version", "description"]
