@@ -21,6 +21,47 @@ ABI consists of 16 channels and passively senses data from visible, near-infrare
   :width: 500
   :alt: Table with ABI band characteristics
 
+Quick Reference Guides
+,,,,,,,,,,,,,,,,,,,,,,
+
+Here is a table with handy quick reference guides for the ABI Level 1b (L1b) bands.
+
++---------------+--------------------------+--------------------+-------------------------------------------------------------------------------------+
+| Band Number   | Band Nickname            | Central Wavelength | Quick Guide                                                                         |
++===============+==========================+====================+=====================================================================================+
+|    1          | Blue band                | 0.47 µm            | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/ABIQuickGuide_Band01.pdf>`_|
++---------------+--------------------------+--------------------+-------------------------------------------------------------------------------------+
+|    2          | Red band                 | 0.64 µm            | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/ABIQuickGuide_Band02.pdf>`_|
++---------------+--------------------------+--------------------+-------------------------------------------------------------------------------------+
+|    3          | Vegetation band          | 0.86 µm            | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/ABIQuickGuide_Band03.pdf>`_|
++---------------+--------------------------+--------------------+-------------------------------------------------------------------------------------+
+|    4          | Cirrus band              | 1.38 µm            | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/ABIQuickGuide_Band04.pdf>`_|
++---------------+--------------------------+--------------------+-------------------------------------------------------------------------------------+
+|    5          | Snow/Ice band            | 1.61 µm            | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/ABIQuickGuide_Band05.pdf>`_|
++---------------+--------------------------+--------------------+-------------------------------------------------------------------------------------+
+|    6          | Cloud Particle Size      | 2.24 µm            | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/ABIQuickGuide_Band06.pdf>`_|
++---------------+--------------------------+--------------------+-------------------------------------------------------------------------------------+
+|    7          | Shortwave infrared       | 3.9 µm             | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/ABIQuickGuide_Band07.pdf>`_|
++---------------+--------------------------+--------------------+-------------------------------------------------------------------------------------+
+|    8          | Upper-level water vapor  | 6.19 µm            | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/ABIQuickGuide_Band08.pdf>`_|
++---------------+--------------------------+--------------------+-------------------------------------------------------------------------------------+
+|    9          | Mid-level water vapor    | 6.95 µm            | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/ABIQuickGuide_Band09.pdf>`_|
++---------------+--------------------------+--------------------+-------------------------------------------------------------------------------------+
+|    10         | Low-level water vapor    | 7.34 µm            | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/ABIQuickGuide_Band10.pdf>`_|
++---------------+--------------------------+--------------------+-------------------------------------------------------------------------------------+
+|    11         | Infrared cloud-top phase | 8.6 µm             | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/ABIQuickGuide_Band11.pdf>`_|
++---------------+--------------------------+--------------------+-------------------------------------------------------------------------------------+
+|    12         | Ozone band               | 9.6 µm             | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/ABIQuickGuide_Band12.pdf>`_|
++---------------+--------------------------+--------------------+-------------------------------------------------------------------------------------+
+|    13         | Infrared clean window    | 10.35 µm           | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/ABIQuickGuide_Band13.pdf>`_|
++---------------+--------------------------+--------------------+-------------------------------------------------------------------------------------+
+|    14         | Infrared window          | 11.2 µm            | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/ABIQuickGuide_Band14.pdf>`_|
++---------------+--------------------------+--------------------+-------------------------------------------------------------------------------------+
+|    15         | Infrared dirty window    | 12.3 µm            | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/ABIQuickGuide_Band15.pdf>`_|
++---------------+--------------------------+--------------------+-------------------------------------------------------------------------------------+
+|    16         | Carbon dioxide           | 13.3 µm            | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/ABIQuickGuide_Band16.pdf>`_|
++---------------+--------------------------+--------------------+-------------------------------------------------------------------------------------+
+
 Modes and sectors
 ,,,,,,,,,,,,,,,,,
 
