@@ -141,7 +141,7 @@ In lieu of a direct-broadcast antenna or LDM connection, the best way to obtain 
 
 On Linux command line, first ``pip install s3fs``. Then using Python,
 
-::
+.. code-block:: Python
     import s3fs
     import xarray as xr
     from datetime import datetime
@@ -161,9 +161,6 @@ On Linux command line, first ``pip install s3fs``. Then using Python,
     plt.imshow(np.sqrt(ch02), cmap="Greys_r")
     plt.axis('off')
     plt.show()
-
-
-    
 
 
 Additional Resources
