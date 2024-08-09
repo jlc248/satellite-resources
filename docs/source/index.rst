@@ -7,7 +7,7 @@ Check out the :doc:`Geostationary` section for further information on geostation
 
 :doc:`Low-Earth-orbit` satellites are much closer to the earth (200-1600 km above the surface), and often have instruments with better spatial resolution than their geostationary counterparts. However, their return periods can be considerable -- 12 hours or more. The phenomena you are interested in will help determine which satellite instrument data to use for your research.
 
-:doc:`Utitities` provides some scripts to compute the solar-zenith angle, satellite-viewing angle (aka satellite-zenith angle), and parallax correction for :doc:`Geostationary` satellites, assuming a constant cloud height. 
+:doc:`Utilities` provides some scripts to compute the solar-zenith angle, satellite-viewing angle (aka satellite-zenith angle), and parallax correction for :doc:`Geostationary` satellites, assuming a constant cloud height. 
 
 .. note::
 
