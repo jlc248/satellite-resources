@@ -124,7 +124,7 @@ Geostationary Lightning Mapper (GLM)
 
 The GLM is the first-of-its-kind optical sensor from geostationary orbit. Its has a single near-infrared band at 777.4 nm. The instrument's horizontal resolution ranges from about 8 km to 12 km. The image below shows the GLM's field-of-view (FOV) [image credit: Brian Blaylock]. 
 
-.. image:: ../static/images/GLM_DE.png
+.. image:: ../static/images/GLM_field-of-view.png
   :width: 800
   :alt: The GLM's field of view (credit: Brian Blaylock).
 
@@ -133,7 +133,7 @@ The Level 2 files are produced every 20 seconds, with output from the LCFA. That
 
 The flash detection efficiency of GLM varies as a function of viewing angle and solar illumination. The figure below summarizes this detection efficiency (source uknown).
 
-.. image:: ../static/images/GLM_field-of-view.png
+.. image:: ../static/images/GLM_DE.png
   :width: 800
   :alt: The GLM's detection efficiency.
 
