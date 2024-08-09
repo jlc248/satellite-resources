@@ -62,7 +62,7 @@ Here is a table with handy quick reference guides for the ABI Level 1b (L1b) ban
 |    16         | Carbon dioxide           | 13.3 µm            | `Link <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/ABIQuickGuide_Band16.pdf>`_|
 +---------------+--------------------------+--------------------+-------------------------------------------------------------------------------------+
 
-Here is a table with handy quick reference guides for the ABI Level 2 products.
+An important Level 2 (L2) product is the "Cloud and Moisture Imagery" (CMI), which is essentially each the radiance from each L1b channel converted to reflectance or brightness temperature. Here is the `quick guide <https://www.goes-r.gov/education/docs/fs_imagery.pdf>`_ for the CMI products. Here is a table with handy quick reference guides for the baseline ABI L2 products.
 
 +------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
 | Baseline Level 2 Product                 | Quick Guide                                                                                                        |
@@ -137,7 +137,11 @@ There a number of excellent websites for GOES-16 imagery. Here are a few of my f
 Data Access
 ~~~~~~~~~~~
 
-In lieu of a direct-broadcast antenna or LDM connection, the best way to obtain GOES-R data is probably through `Amazon's cloud <https://registry.opendata.aws/noaa-goes/>`_ (or `Google <https://console.cloud.google.com/marketplace/product/noaa-public/goes>`_, or `Microsoft <https://planetarycomputer.microsoft.com/catalog?filter=goes>`_). `GOES-2-Go <https://goes2go.readthedocs.io/en/latest/>`_ is a handy tool to download data from AWS and create some quick-look images. Or you can u
+In lieu of a direct-broadcast antenna or LDM connection, the best way to obtain GOES-R data is probably through `Amazon's cloud <https://registry.opendata.aws/noaa-goes/>`_ (or `Google <https://console.cloud.google.com/marketplace/product/noaa-public/goes>`_, or `Microsoft <https://planetarycomputer.microsoft.com/catalog?filter=goes>`_). `GOES-2-Go <https://goes2go.readthedocs.io/en/latest/>`_ is a handy tool to download data from AWS and create some quick-look images. Or you can use `s3fs` to directly access GOES-R data.
+
+```
+import s3fs
+```
 
 
 Additional Resources
