@@ -139,6 +139,9 @@ Data Access
 
 In lieu of a direct-broadcast antenna or LDM connection, the best way to obtain GOES-R data is probably through `Amazon's cloud <https://registry.opendata.aws/noaa-goes/>`_ (or `Google <https://console.cloud.google.com/marketplace/product/noaa-public/goes>`_, or `Microsoft <https://planetarycomputer.microsoft.com/catalog?filter=goes>`_). `GOES-2-Go <https://goes2go.readthedocs.io/en/latest/>`_ is a handy tool to download data from AWS and create some quick-look images. Or you can use ``s3fs`` to directly access GOES-R data.
 
+Using ``s3fs``
+,,,,,,,,,,,,,,
+
 On Linux command line, first ``pip install s3fs``. Then using Python,
 
 .. code-block:: Python
@@ -166,6 +169,45 @@ On Linux command line, first ``pip install s3fs``. Then using Python,
 .. image:: ../static/images/vis_20200810-1801.png
   :width: 500
   :alt: GOES-East CONUS visible (CH02) image.
+
+Using GOES-2-Go
+,,,,,,,,,,,,,,,
+
+Here we use ``goes2go`` to get L1b data for two infrared bands, channels 08 and 13. We will convert them to brightness temperature ourselves.
+
+.. code-block:: Python
+
+    from goes2go import GOES
+    import xarray as xr
+    import matplotlib.pyplot as plt
+
+    G = GOES(satellite=16, product="ABI-L1b-Rad", domain='C', bands=[8,13]) # leave out `bands` keyword if you want all channels.
+
+    # Download the latest available
+    ds = G.latest(download=False)  # `download=False` means reading from AWS to RAM directly.
+
+    # Convert to numpy.ndarray and convert to BT
+
+    # constants
+    planck_fk1 = ds['planck_fk1'].data[0]
+    planck_fk2 = ds['planck_fk2'].data[0]
+    planck_bc1 = ds['planck_bc1'].data[0]
+    planck_bc2 = ds['planck_bc2'].data[0]
+
+    ch08 = ds.Rad[0].data
+    ch13 = ds.Rad[1].data
+    
+    fig,ax = plt.subplots(nrows=1, ncols=2, figsize=(12,5))
+    ax[0].imshow(ch08, cmap="plasma")
+    ax[0].axis('off')
+    ax[0].set_title('CH08 upper-level water vapor')
+    ax[1].imshow(ch13, cmap="viridis")
+    ax[1].axis('off')
+    ax[1].set_title('CH13 clean IR-window')
+
+.. image:: ../static/images/ir-ch08-ch13.png
+  :width: 500
+  :alt: GOES-East CONUS IR (CH08 + CH13) image.
 
 Additional Resources
 --------------------
