@@ -139,9 +139,11 @@ Data Access
 
 In lieu of a direct-broadcast antenna or LDM connection, the best way to obtain GOES-R data is probably through `Amazon's cloud <https://registry.opendata.aws/noaa-goes/>`_ (or `Google <https://console.cloud.google.com/marketplace/product/noaa-public/goes>`_, or `Microsoft <https://planetarycomputer.microsoft.com/catalog?filter=goes>`_). `GOES-2-Go <https://goes2go.readthedocs.io/en/latest/>`_ is a handy tool to download data from AWS and create some quick-look images. Or you can use `s3fs` to directly access GOES-R data.
 
-```
-import s3fs
-```
+::
+
+    import s3fs
+    x = 7
+    print(x)
 
 
 Additional Resources
