@@ -142,6 +142,7 @@ In lieu of a direct-broadcast antenna or LDM connection, the best way to obtain 
 On Linux command line, first ``pip install s3fs``. Then using Python,
 
 .. code-block:: Python
+
     import s3fs
     import xarray as xr
     from datetime import datetime
