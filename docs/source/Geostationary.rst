@@ -170,7 +170,7 @@ On Linux command line, first ``pip install s3fs``. Then using Python,
   :width: 500
   :alt: GOES-East CONUS visible (CH02) image.
 
-Using GOES-2-Go
+Using `GOES-2-Go <https://goes2go.readthedocs.io/en/latest/>`_
 ,,,,,,,,,,,,,,,
 
 Here we use ``goes2go`` to get L1b data for two infrared bands, channels 08 and 13. We will convert them to brightness temperature ourselves.
