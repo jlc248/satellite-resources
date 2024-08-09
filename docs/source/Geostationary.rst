@@ -124,11 +124,14 @@ The pair of images below shows the increasing pixel area further away from nadir
 Geostationary Lightning Mapper (GLM)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The GLM is the first-of-its-kind optical sensor from geostationary orbit. Its has a single near-infrared band at 777.4 nm. The instrument's horizontal resolution ranges from about 8 km to 12 km. The image below shows the GLM's field-of-view (FOV) [image credit: Brian Blaylock]. This set of `quick guides <https://www.star.nesdis.noaa.gov/goes/documents/GLM_Quick_Guides_May_2019.pdf>`_ provides a great overview of GLM events, groups, and flashes that the `Lightning Cluster-Filter Algorithm (LCFA) <https://www.star.nesdis.noaa.gov/goesr/docs/ATBD/LCFA.pdf>`_ creates, as well as information on higher-level gridded products, such as flash-extent density, average flash area, and total optical energy.
+The GLM is the first-of-its-kind optical sensor from geostationary orbit. Its has a single near-infrared band at 777.4 nm. The instrument's horizontal resolution ranges from about 8 km to 12 km. The image below shows the GLM's field-of-view (FOV) [image credit: Brian Blaylock]. 
 
 .. image:: ../static/images/GLM_field-of-view.png
   :width: 800
   :alt: The GLM's field of view (credit: Brian Blaylock).
+
+This set of `quick guides <https://www.star.nesdis.noaa.gov/goes/documents/GLM_Quick_Guides_May_2019.pdf>`_ provides a great overview of GLM events, groups, and flashes that the `Lightning Cluster-Filter Algorithm (LCFA) <https://www.star.nesdis.noaa.gov/goesr/docs/ATBD/LCFA.pdf>`_ creates, as well as information on higher-level gridded products, such as flash-extent density, average flash area, and total optical energy.
+The Level 2 files are produced every 20 seconds, with centroids of events, groups, and flashes. These point-based products are parallax-corrected using a "lightning ellipsoid," which assumes a cloud height based on location and time of the year [FIXME: check time of year]. These files are available at all of the same sources that ABI is (see :ref:`Data Access`). 
 
 Gridded GLM products
 ,,,,,,,,,,,,,,,,,,,,
