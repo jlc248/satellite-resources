@@ -206,7 +206,7 @@ Here we use ``goes2go`` to get L1b data for two infrared bands, channels 08 and 
     ax[1].set_title('CH13 clean IR-window')
 
 .. image:: ../static/images/ir-ch08-ch13.png
-  :width: 500
+  :width: 900
   :alt: GOES-East CONUS IR (CH08 + CH13) image.
 
 Additional Resources
