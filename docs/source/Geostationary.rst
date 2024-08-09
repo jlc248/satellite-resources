@@ -163,6 +163,9 @@ On Linux command line, first ``pip install s3fs``. Then using Python,
     plt.axis('off')
     plt.show()
 
+.. image:: ../static/images/vis_20200810-1801.png
+  :width: 500
+  :alt: GOES-East CONUS visible (CH02) image.
 
 Additional Resources
 --------------------
