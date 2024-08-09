@@ -121,8 +121,11 @@ The pair of images below shows the increasing pixel area further away from nadir
   :width: 800
   :alt: Two images with GOES pixel areas and sector boxes.
 
+Geostationary Lightning Mapper (GLM)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 Data Viewing
-,,,,,,,,,,,,
+~~~~~~~~~~~~
 
 There a number of excellent websites for GOES-16 imagery. Here are a few of my favorites:
 
@@ -130,13 +133,11 @@ There a number of excellent websites for GOES-16 imagery. Here are a few of my f
 - `CIRA Slider <https://rammb-slider.cira.colostate.edu/>`_
 - `College of DuPage <weather.cod.edu/satrad>`_
 
-Geostationary Lightning Mapper (GLM)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Data Access
 ~~~~~~~~~~~
 
-In lieu of a direct-broadcast antenna or LDM connection, the best way to obtain GOES-R data is probably through `Amazon's cloud <https://registry.opendata.aws/noaa-goes/>`_ (or `Google <https://console.cloud.google.com/marketplace/product/noaa-public/goes>`_, or `Microsoft <https://planetarycomputer.microsoft.com/catalog?filter=goes>`_).
+In lieu of a direct-broadcast antenna or LDM connection, the best way to obtain GOES-R data is probably through `Amazon's cloud <https://registry.opendata.aws/noaa-goes/>`_ (or `Google <https://console.cloud.google.com/marketplace/product/noaa-public/goes>`_, or `Microsoft <https://planetarycomputer.microsoft.com/catalog?filter=goes>`_). `GOES-2-Go <https://goes2go.readthedocs.io/en/latest/>`_ is a handy tool to download data from AWS and create some quick-look images. Or you can u
 
 
 Additional Resources
