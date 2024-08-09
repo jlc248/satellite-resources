@@ -129,7 +129,13 @@ The GLM is the first-of-its-kind optical sensor from geostationary orbit. Its ha
   :alt: The GLM's field of view (credit: Brian Blaylock).
 
 This set of `quick guides <https://www.star.nesdis.noaa.gov/goes/documents/GLM_Quick_Guides_May_2019.pdf>`_ provides a great overview of GLM events, groups, and flashes that the `Lightning Cluster-Filter Algorithm (LCFA) <https://www.star.nesdis.noaa.gov/goesr/docs/ATBD/LCFA.pdf>`_ creates, as well as information on higher-level gridded products, such as flash-extent density, average flash area, and total optical energy.
-The Level 2 files are produced every 20 seconds, with output from the LCFA. That is, the centroids of events, groups, and flashes. These point-based products are parallax-corrected using a "lightning ellipsoid," which assumes a cloud height based on location and time of the year [FIXME: check time of year]. These files are available at all of the same sources that ABI is (see :ref:`Data Access`). 
+The Level 2 files are produced every 20 seconds, with output from the LCFA. That is, the centroids of events, groups, and flashes. These point-based products are parallax-corrected using a "lightning ellipsoid," which assumes a cloud height based on location and time of the year [FIXME: check time of year]. These files are available at all of the same sources wherer ABI is (see :ref:`Data Access`).
+
+The flash detection efficiency of GLM varies as a function of viewing angle and solar illumination. The figure below summarizes this detection efficiency (source uknown).
+
+.. image:: ../static/images/GLM_field-of-view.png
+  :width: 800
+  :alt: The GLM's detection efficiency.
 
 Gridded GLM products
 ,,,,,,,,,,,,,,,,,,,,
