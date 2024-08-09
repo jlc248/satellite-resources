@@ -1,8 +1,6 @@
 Geostationary
 =============
 
-.. _installation:
-
 GOES-R
 ------
 
