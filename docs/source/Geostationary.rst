@@ -203,14 +203,23 @@ Here we use ``goes2go`` to get L1b data for two infrared bands, channels 08 and 
 
     # Convert to numpy.ndarray and convert to BT
 
-    # constants
+    # constants for ch08
     planck_fk1 = ds['planck_fk1'].data[0]
     planck_fk2 = ds['planck_fk2'].data[0]
     planck_bc1 = ds['planck_bc1'].data[0]
     planck_bc2 = ds['planck_bc2'].data[0]
 
     ch08 = ds.Rad[0].data
+    ch08 = (planck_fk2 / (np.log((planck_fk1 / ch08) + 1)) - planck_bc1) / planck_bc2
+
+    # constants for ch13
+    planck_fk1 = ds['planck_fk1'].data[1]
+    planck_fk2 = ds['planck_fk2'].data[1]
+    planck_bc1 = ds['planck_bc1'].data[1]
+    planck_bc2 = ds['planck_bc2'].data[1]
+
     ch13 = ds.Rad[1].data
+    ch13 = (planck_fk2 / (np.log((planck_fk1 / ch13) + 1)) - planck_bc1) / planck_bc2
     
     fig,ax = plt.subplots(nrows=1, ncols=2, figsize=(12,5))
     ax[0].imshow(ch08, cmap="plasma")
