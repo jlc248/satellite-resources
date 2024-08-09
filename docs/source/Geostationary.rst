@@ -136,7 +136,7 @@ The Level 2 files are produced every 20 seconds, with output from the LCFA. That
 Gridded GLM products
 ,,,,,,,,,,,,,,,,,,,,
 
-The best way to create the gridded products it to use `glmtools <https://github.com/deeplycloudy/glmtools>`_. This `page <https://github.com/deeplycloudy/glmtools/blob/master/docs/index.rst>`_ provides installation instructions and some examples of how to use the command-line utility, ``make_GLM_grids.py``. From an operational perspective, the flash-extent density and minimum flash area (both available with ``glmtools``) are the most used products. The flash-extent density provides the count of flashes that traverses a given pixel, whereas low minimum flash areas can indicate new storm updrafts. 
+The best way to create the gridded products it to use `glmtools <https://github.com/deeplycloudy/glmtools>`_. This `page <https://github.com/deeplycloudy/glmtools/blob/master/docs/index.rst>`_ provides installation instructions and some examples of how to use the command-line utility, ``make_GLM_grids.py``. From an operational perspective, the flash-extent density and minimum flash area (both available with ``glmtools``) are the most used products. The flash-extent density provides the count of flashes that traverses a given pixel, whereas low minimum flash areas can indicate new storm updrafts. **Note well: The gridded GLM products remove the parallax correction from the LCFA flashes.** Thus, they match the un-corrected ABI data.
 
 Data Viewing
 ~~~~~~~~~~~~
@@ -186,7 +186,7 @@ On Linux command line, first ``pip install s3fs``. Then using Python,
   :alt: GOES-East CONUS visible (CH02) image.
 
 Using `GOES-2-Go <https://goes2go.readthedocs.io/en/latest/>`_
-,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 
 Here we use ``goes2go`` to get L1b data for two infrared bands, channels 08 and 13. We will convert them to brightness temperature ourselves.
 
@@ -225,23 +225,23 @@ Here we use ``goes2go`` to get L1b data for two infrared bands, channels 08 and 
   :alt: GOES-East CONUS IR (CH08 + CH13) image.
 
 Additional Resources
---------------------
+~~~~~~~~~~~~~~~~~~~~
 
 - `Beginner's Guide to GOES-R Series Data <https://noaa-goes16.s3.amazonaws.com/Version1.1_Beginners_Guide_to_GOES-R_Series_Data.pdf>`_
 - `GOES-R Series Data Book <https://www.goes-r.gov/downloads/resources/documents/GOES-RSeriesDataBook.pdf>`_
 
 Himawari
-========
+--------
 
 Advanced Himawari Imager (AHI)
-------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Meteosat Third Generation (MTG)
-===============================
+-------------------------------
 
 Flexible Combined Imager (FCI)
-------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Lightning Imager (LI)
----------------------
+~~~~~~~~~~~~~~~~~~~~~
 
