@@ -137,13 +137,33 @@ There a number of excellent websites for GOES-16 imagery. Here are a few of my f
 Data Access
 ~~~~~~~~~~~
 
-In lieu of a direct-broadcast antenna or LDM connection, the best way to obtain GOES-R data is probably through `Amazon's cloud <https://registry.opendata.aws/noaa-goes/>`_ (or `Google <https://console.cloud.google.com/marketplace/product/noaa-public/goes>`_, or `Microsoft <https://planetarycomputer.microsoft.com/catalog?filter=goes>`_). `GOES-2-Go <https://goes2go.readthedocs.io/en/latest/>`_ is a handy tool to download data from AWS and create some quick-look images. Or you can use `s3fs` to directly access GOES-R data.
+In lieu of a direct-broadcast antenna or LDM connection, the best way to obtain GOES-R data is probably through `Amazon's cloud <https://registry.opendata.aws/noaa-goes/>`_ (or `Google <https://console.cloud.google.com/marketplace/product/noaa-public/goes>`_, or `Microsoft <https://planetarycomputer.microsoft.com/catalog?filter=goes>`_). `GOES-2-Go <https://goes2go.readthedocs.io/en/latest/>`_ is a handy tool to download data from AWS and create some quick-look images. Or you can use ``s3fs`` to directly access GOES-R data.
+
+On Linux command line, first ``pip install s3fs``. Then using Python,
 
 ::
-
     import s3fs
-    x = 7
-    print(x)
+    import xarray as xr
+    from datetime import datetime
+    import matplotlib.pyplot as plt
+
+    fs = s3fs.S3FileSystem(anon=True) #connect to s3 bucket!
+
+    # Get the C02 CMI for 10 August 2020 18:01 UTC
+    abidt = datetime(2020,8,10,18,1)
+    file_location = fs.glob(abidt.strftime('s3://noaa-goes16/ABI-L2-CMIPC/%Y/%j/%H/*C02*_s%Y%j%H%M*.nc'))
+    file_ob = [fs.open(file) for file in file_location]
+    ds = xr.open_mfdataset(file_ob, combine='nested', concat_dim='time')
+    ch02 = ds['Rad'][0].data.compute()
+
+    # Make the image
+    # Note: I applied a square-root enhancement to make the land stick out more, but it is not necessary.
+    plt.imshow(np.sqrt(ch02), cmap="Greys_r")
+    plt.axis('off')
+    plt.show()
+
+
+    
 
 
 Additional Resources
