@@ -146,6 +146,7 @@ There a number of excellent websites for GOES-16 imagery. Here are a few of my f
 - `CIMSS CSPP Geosphere <https://geosphere.ssec.wisc.edu/#coordinate:0,0;>`_
 - `CIRA Slider <https://rammb-slider.cira.colostate.edu/>`_
 - `College of DuPage <weather.cod.edu/satrad>`_
+- `NOAA GOES imagery viewer <https://www.star.nesdis.noaa.gov/goes/>`_
 
 
 Data Access
