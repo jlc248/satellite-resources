@@ -16,7 +16,7 @@ ATMS
 NUCAPS
 ~~~~~~
 
-METOP
+MetOp
 -----
 
 Oribt tracks
