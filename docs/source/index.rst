@@ -22,3 +22,5 @@ Contents
    Geostationary
    Low-Earth-orbit
    Utilities
+
+   docs/static/notebooks/Remapping GOES ABI data.ipynb
