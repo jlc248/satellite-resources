@@ -6,7 +6,7 @@ GOES-R
 
 The `Geostationary Operational Environment Satellite R-Series <https://www.goes-r.gov/>`_ is NOAA's latest geostationary set of satellites. GOES-16, GOES-17, GOES-18, and GOES-19 are part of this series. The two instruments for terrestrial weather are the `Advanced Baseline Imager (ABI) <https://www.goes-r.gov/spacesegment/abi.html>`_ and the `Geostationary Lightning Mapper (GLM) <https://www.goes-r.gov/spacesegment/glm.html>`_.
 
-.. image:: docs/_static/images/GOES-East_geosphere.png
+.. image:: ../../_static/images/GOES-East_geosphere.png
   :width: 500
   :alt: GOES-East full disk true-color image.
 
