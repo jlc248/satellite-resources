@@ -22,4 +22,4 @@ Contents
    Geostationary
    Low-Earth-orbit
    Utilities
-   ../static/notebooks/Remapping GOES ABI data
+   docs/static/notebooks/Remapping GOES ABI data
