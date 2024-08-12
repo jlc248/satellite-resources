@@ -6,7 +6,7 @@ GOES-R
 
 The `Geostationary Operational Environment Satellite R-Series <https://www.goes-r.gov/>`_ is NOAA's latest geostationary set of satellites. GOES-16, GOES-17, GOES-18, and GOES-19 are part of this series. The two instruments for terrestrial weather are the `Advanced Baseline Imager (ABI) <https://www.goes-r.gov/spacesegment/abi.html>`_ and the `Geostationary Lightning Mapper (GLM) <https://www.goes-r.gov/spacesegment/glm.html>`_.
 
-.. image:: ../static/images/GOES-East_geosphere.png
+.. image:: ../_static/images/GOES-East_geosphere.png
   :width: 500
   :alt: GOES-East full disk true-color image.
 
@@ -15,7 +15,7 @@ Advanced Baseline Imager (ABI)
 
 ABI consists of 16 channels and passively senses emitted and reflected radiation from visible, near-infrared, and longwave-infrared parts of the EM spectrum. The table summarizes some characteristics of the bands.
 
-.. image:: ../static/images/ABI_table.png
+.. image:: ../_static/images/ABI_table.png
   :width: 500
   :alt: Table with ABI band characteristics
 
@@ -115,7 +115,7 @@ ABI has multiple scan modes. In mode 4, or continuous full disk mode, the ABI pr
 
 The pair of images below shows the increasing pixel area further away from nadir. The default east position is at 75 degrees west longitude; the default west position is at 137 degrees west longitude. Within the full-disk image, there is outlined the CONUS/PACUS and sample mesoscale sector domains. 
 
-.. image:: ../static/images/GOES_pixel-areas.png
+.. image:: ../_static/images/GOES_pixel-areas.png
   :width: 800
   :alt: Two images with GOES pixel areas and sector boxes.
 
@@ -124,7 +124,7 @@ Geostationary Lightning Mapper (GLM)
 
 The GLM is the first-of-its-kind optical sensor from geostationary orbit. Its has a single near-infrared band at 777.4 nm. The instrument's horizontal resolution ranges from about 8 km to 12 km. The image below shows the GLM's field-of-view (FOV) [image credit: Brian Blaylock]. 
 
-.. image:: ../static/images/GLM_field-of-view.png
+.. image:: ../_static/images/GLM_field-of-view.png
   :width: 800
   :alt: The GLM's field of view (credit: Brian Blaylock).
 
@@ -133,7 +133,7 @@ The Level 2 files are produced every 20 seconds, with output from the LCFA. That
 
 The flash detection efficiency of GLM varies as a function of viewing angle and solar illumination. The figure below summarizes this detection efficiency (source uknown). Users should be wary of using the data towards the limbs of the FOV.
 
-.. image:: ../static/images/GLM_DE.png
+.. image:: ../_static/images/GLM_DE.png
   :width: 800
   :alt: The GLM's detection efficiency.
 
@@ -185,7 +185,7 @@ On Linux command line, first ``pip install s3fs``. Then using Python,
     plt.axis('off')
     plt.show()
 
-.. image:: ../static/images/vis_20200810-1801.png
+.. image:: ../_static/images/vis_20200810-1801.png
   :width: 500
   :alt: GOES-East CONUS visible (CH02) image.
 
@@ -233,7 +233,7 @@ Here we use ``goes2go`` to get L1b data for two infrared bands, channels 08 and 
     ax[1].axis('off')
     ax[1].set_title('CH13 clean IR-window')
 
-.. image:: ../static/images/ir-ch08-ch13.png
+.. image:: ../_static/images/ir-ch08-ch13.png
   :width: 900
   :alt: GOES-East CONUS IR (CH08 + CH13) image.
 
