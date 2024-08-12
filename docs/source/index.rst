@@ -22,4 +22,3 @@ Contents
    Geostationary
    Low-Earth-orbit
    Utilities
-   Remapping GOES ABI data
