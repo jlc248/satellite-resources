@@ -237,11 +237,10 @@ Here we use ``goes2go`` to get L1b data for two infrared bands, channels 08 and 
   :width: 900
   :alt: GOES-East CONUS IR (CH08 + CH13) image.
 
-Additional Resources
-~~~~~~~~~~~~~~~~~~~~
+.. seealso::
 
-- `Beginner's Guide to GOES-R Series Data <https://noaa-goes16.s3.amazonaws.com/Version1.1_Beginners_Guide_to_GOES-R_Series_Data.pdf>`_
-- `GOES-R Series Data Book <https://www.goes-r.gov/downloads/resources/documents/GOES-RSeriesDataBook.pdf>`_
+    - `Beginner's Guide to GOES-R Series Data <https://noaa-goes16.s3.amazonaws.com/Version1.1_Beginners_Guide_to_GOES-R_Series_Data.pdf>`_
+    - `GOES-R Series Data Book <https://www.goes-r.gov/downloads/resources/documents/GOES-RSeriesDataBook.pdf>`_
 
 .. toctree::
     :maxdepth: 1
