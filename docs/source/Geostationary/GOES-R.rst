@@ -243,3 +243,7 @@ Additional Resources
 - `Beginner's Guide to GOES-R Series Data <https://noaa-goes16.s3.amazonaws.com/Version1.1_Beginners_Guide_to_GOES-R_Series_Data.pdf>`_
 - `GOES-R Series Data Book <https://www.goes-r.gov/downloads/resources/documents/GOES-RSeriesDataBook.pdf>`_
 
+.. toctree::
+    :maxdepth: 1
+
+    Remapping GOES ABI data
