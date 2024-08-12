@@ -1,7 +1,7 @@
 Weather Satellite Resources
 ===================================
 
-This wiki provides some organization to weather satellite resources that are available. 
+This wiki provides some organization to weather satellite resources that are available for researchers.
 
 Check out the :doc:`Geostationary` section for further information on geostationary satellite instruments, which continuously view the earth from the same position, 35,786 km (22,236 miles) above the earth's surface.
 
