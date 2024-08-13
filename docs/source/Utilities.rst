@@ -23,6 +23,7 @@ From this graph, we can see that the normalized cloud offset increases exponenti
 To visualize the...
 
 .. seealso::
+
     - `Why is my GOES-16 imagery displaced? Parallax! <https://satelliteliaisonblog.com/2017/04/19/why-is-my-goes-16-imagery-displaced-parallax/>`_
     - `The problem of parallax <https://cimss.ssec.wisc.edu/satellite-blog/archives/217>`_
     - `GOES East/West GLM compared <https://satelliteliaisonblog.com/2019/07/09/goes-east-west-glm-compare-and-glm-parallax/>`_
