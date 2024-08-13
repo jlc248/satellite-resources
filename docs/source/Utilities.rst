@@ -12,7 +12,7 @@ For geostationary satellite data in particular, the affects of parallax are a bi
     :width: 400
     :alt: Schematic diagram showing effects of parallax
 
-.. image:: ../_static/parallax_2.gif
+.. image:: ../_static/parallax_2.png
     :width: 400
     :alt: Graph of normalized cloud offset as a function of the angular distance from nadir.
 
