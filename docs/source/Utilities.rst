@@ -20,7 +20,11 @@ A geostationary satellite's nadir point is at the equator. At this point, high c
 
 From this graph, we can see that the normalized cloud offset increases exponentially as the angular distance from nadir increases. For example, for a cloud top at 10 km AGL, and a satellite-viewing angle 60 degrees, the displacement is ``10 * 2.6 = 26 km``.
 
-To visualize the...
+To visualize the effects of parallax in GOES data, `this CIMSS page <https://cimss.ssec.wisc.edu/goes/webapps/parallax/overview.html>`_ is a handy resource. For instance, the image below shows the relative effects of parallax over the CONUS sector for a cloud at 30 kft (the vectors are exaggerated).
+
+.. image:: ../_static/parallax_3.png
+    :width: 650
+    :alt: Map of relative parallax discplacement over the CONUS
 
 .. seealso::
 
@@ -29,8 +33,10 @@ To visualize the...
     - `GOES East/West GLM compared <https://satelliteliaisonblog.com/2019/07/09/goes-east-west-glm-compare-and-glm-parallax/>`_
     - `High-Resolution Satellite Imagery for Mesoscale Meteorological Studies <https://doi.org/10.1175/1520-0477(1994)075%3C0005:HRSIFM%3E2.0.CO;2>`_
 
-Solar-zenith angle
-------------------
 
 Satellite-viewing angle
 -----------------------
+
+Solar-zenith angle
+------------------
+
