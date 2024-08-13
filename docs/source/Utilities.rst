@@ -29,9 +29,10 @@ To visualize the effects of parallax in GOES data, `this CIMSS page <https://cim
 Parallax-correction example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Explore this example on performing a parallax correction using a constant-cloud-height assumption and GOES-East data.
+Explore this `example notebook <https://colab.research.google.com/drive/1m2m1tcqgRFZf6j06zdy0oQ_8DKFC6hCb#scrollTo=asemEOB0EH4X>`_ on performing a parallax correction using a constant-cloud-height assumption and GOES-East data.
 
 .. toctree::
+    :maxdepth: 1
 
     Parallax
 
