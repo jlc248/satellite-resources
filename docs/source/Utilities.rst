@@ -26,13 +26,21 @@ To visualize the effects of parallax in GOES data, `this CIMSS page <https://cim
     :width: 650
     :alt: Map of relative parallax discplacement over the CONUS
 
+Parallax-correction example
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Explore this example on performing a parallax correction using a constant-cloud-height assumption and GOES-East data.
+
+.. toctree::
+
+    Parallax
+
 .. seealso::
 
     - `Why is my GOES-16 imagery displaced? Parallax! <https://satelliteliaisonblog.com/2017/04/19/why-is-my-goes-16-imagery-displaced-parallax/>`_
     - `The problem of parallax <https://cimss.ssec.wisc.edu/satellite-blog/archives/217>`_
     - `GOES East/West GLM compared <https://satelliteliaisonblog.com/2019/07/09/goes-east-west-glm-compare-and-glm-parallax/>`_
     - `High-Resolution Satellite Imagery for Mesoscale Meteorological Studies <https://doi.org/10.1175/1520-0477(1994)075%3C0005:HRSIFM%3E2.0.CO;2>`_
-
 
 Satellite-viewing angle
 -----------------------
