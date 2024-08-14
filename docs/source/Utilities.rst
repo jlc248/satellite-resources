@@ -46,6 +46,16 @@ Explore this `example notebook <https://colab.research.google.com/drive/1m2m1tcq
 Satellite-viewing angle
 -----------------------
 
+The satellite-viewing angle (or satellite-zenith angle) is proportional to the pixel area for a geostationary satellite. As this angle increases, the pixel area increases. In the figure below, the satellite-zenith angle is the angle between an observer's zenith (looking straight up) and the line connecting the observer and the satellite [image credit: Royal Belgian Institute for Space Aeronomy].
+
+.. image:: ../_static/vza_sza.gif
+    :width: 500
+    :alt: Cartoon showing the satellite-zenith and solar-zenith angles
+
+This could be helpful to calculate, as one may wish to characterize an analysis as a function of satellite-zenith angle, to discriminate between "near-nadir" locations, "limb" locations, and those in-between. The "limb" is the term generally referred to as those locations on the extremeties of the satellite field of view. For geostationary satellites, the "limb" is generally satellite-zenith angle ≥ 85 degrees.
+
+The function `sat_zen_angle.py <https://github.com/jlc248/satellite-resources/edit/main/src/sat_zen_angle.py>`_ will compute the satellite-zenith angle for a geostationary satellite.
+
 Solar-zenith angle
 ------------------
 
