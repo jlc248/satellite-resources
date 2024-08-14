@@ -48,7 +48,7 @@ Satellite-viewing angle
 
 The satellite-viewing angle (or satellite-zenith angle) is proportional to the pixel area for a geostationary satellite. As this angle increases, the pixel area increases. In the figure below, the satellite-zenith angle is the angle between an observer's zenith (looking straight up) and the line connecting the observer and the satellite [image credit: Royal Belgian Institute for Space Aeronomy].
 
-.. image:: ../_static/images/vza_sza.gif
+.. image:: ../_static/images/vza-sza.gif
     :width: 500
     :alt: Cartoon showing the satellite-zenith and solar-zenith angles
 
