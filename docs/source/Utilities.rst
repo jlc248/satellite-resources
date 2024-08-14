@@ -54,7 +54,7 @@ The satellite-viewing angle (or satellite-zenith angle) is proportional to the p
 
 This could be helpful to calculate, as one may wish to characterize an analysis as a function of satellite-zenith angle, to discriminate between "near-nadir" locations, "limb" locations, and those in-between. The "limb" is the term generally referred to as those locations on the extremeties of the satellite field of view. For geostationary satellites, the "limb" is generally satellite-zenith angle ≥ 85 degrees.
 
-See the notebook below for an example on calculating and visualizing satellite-zenith angle (`original Colab notebook <https://colab.research.google.com/drive/1bUc7xtxTMU-kFxpw4_vHRFudDT5cRvk1#scrollTo=fmQ9zogVzMrK`_).
+See the notebook below for an example on calculating and visualizing satellite-zenith angle (`original Colab notebook <https://colab.research.google.com/drive/1bUc7xtxTMU-kFxpw4_vHRFudDT5cRvk1#scrollTo=fmQ9zogVzMrK>`_).
 
 .. toctree::
     :maxdepth: 1
