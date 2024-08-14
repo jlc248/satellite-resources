@@ -58,6 +58,7 @@ See the notebook below for an example on calculating and visualizing satellite-z
 
 .. toctree::
     :maxdepth: 1
+    :caption: Contents:
 
     Satellite-Zenith Angle
 
