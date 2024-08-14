@@ -57,6 +57,7 @@ This could be helpful to calculate, as one may wish to characterize an analysis 
 The function `sat_zen_angle.py <https://github.com/jlc248/satellite-resources/blob/main/src/sat_zen_angle.py>`_ will compute the satellite-zenith angle for a geostationary satellite.
 
 .. toctree::
+    :maxdepth: 0
 
     Satellite-Zenith Angle
 
