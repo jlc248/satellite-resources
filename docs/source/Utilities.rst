@@ -1,7 +1,7 @@
 Utilities
 =========
 
-This section provides examples and utilities for some common problems. The source code is found in the ```src <https://github.com/jlc248/satellite-resources/tree/main/src>`_`` directory of this repo.
+This section provides examples and utilities for some common problems. The source code is found in the ` ``src`` <https://github.com/jlc248/satellite-resources/tree/main/src>`_ directory of this repo.
 
 Parallax correction
 -------------------
