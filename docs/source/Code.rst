@@ -1,6 +1,6 @@
 
-``src``
-=======
+Code
+====
 
 .. automodule:: src
    :members:
