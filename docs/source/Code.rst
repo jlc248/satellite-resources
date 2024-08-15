@@ -1,5 +1,8 @@
-.. toctree::
-   :maxdepth: 3
 
-   src
+``src``
+=======
+
+.. automodule:: src
+   :members:
+   :undoc-members:
 
