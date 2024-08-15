@@ -18,4 +18,4 @@ This section provides examples and utilities for some common problems. The sourc
 .. toctree::
     :maxdepth: 3
 
-    Satellite-Zenith Angle
+    Satellite and Solar Angles
