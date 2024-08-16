@@ -258,48 +258,29 @@ Advanced Himawari Imager (AHI)
 
 The AHI was designed based off of ABI (Himawari-8 actually had the first ABI-generation imager launched into space!), but with a few differences.
 
+Data Access
+~~~~~~~~~~~
+
+Himawari data can be accessed via NOAA's Open Data Dissemination Program (NODD). See `here for AWS data <https://registry.opendata.aws/noaa-himawari/>`_ for Himawari-9. The script below will download the data and use `satpy` to read and process the data for visualization. `Satpy <https://satpy.readthedocs.io/en/stable/index.html>`_ is a very powerful tool for satellite I/O and processing. It can handle files from ABI, AHI, FCI, ATMS, VIIRS, IASI, and other instruments. 
+
 .. code-block:: Python
 
-    import s3fs
     import matplotlib.pyplot as plt
     from datetime import datetime
     import os
-    import subprocess
     import satpy
-    import glob
-    import cartopy.crs as ccrs
 
     fs = s3fs.S3FileSystem(anon=True)
 
     dt = datetime(2024,8,10,6,20)
-    file_location = fs.glob(dt.strftime('s3://noaa-himawari9/AHI-L1b-FLDK/%Y/%m/%d/%H%M/HS_H09_%Y%m%d_%H%M_B13_FLDK_R*_S*.DAT.bz2'))
-    file_ob = [fs.open(file) for file in file_location]
 
-    # Local directory for files
-    o s.makedirs('downloaded_files', exist_ok=True)
+    # Read remote files on NODD/AWS
+    # Note the reader is 'ahi_hsd' for Himawari
+    storage_options = {'anon': True}
+    filenames = [dt.strftime('s3://noaa-himawari9/AHI-L1b-FLDK/%Y/%m/%d/%H%M/HS_H09_%Y%m%d_%H%M_B13_FLDK_R*_S*.DAT.bz2')]
+    scene = satpy.Scene(reader='ahi_hsd', filenames=filenames, reader_kwargs={'storage_options': storage_options})
 
-    # Loop through each file object in file_ob
-    for file in file_ob:
-
-        # Extract the filename from the file object (optional)
-        filename = file.full_name.split("/")[-1]  # Get the last part (filename)
-
-        # Download the file using fs.get
-        local_path = f"downloaded_files/{filename}"  # Define local path (modify as needed)
-
-        fs.get(file.full_name, local_path)
-
-        # Close the file object (optional, good practice)
-        file.close()
-
-        # Must have bunzip2 installed locally
-        subprocess.run(['bunzip2', local_path])
-
-    datafiles = glob.glob("downloaded_files/*.DAT")
-
-    # Load the Scene object with Satpy. Note the reader is "ahi_hsd" for Himawari
-    scene = satpy.Scene(filenames=datafiles, reader="ahi_hsd")
-    # "Load" the band(s) we want to work with. Can do multiple bands.
+    # "Load" the band(s) we want to work with. Can do multiple bands, if the `filenames` included multiple bands.
     scene.load(["B13"])
 
     # Get the CRS, embedded in the Scene
