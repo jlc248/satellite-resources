@@ -256,6 +256,86 @@ Himawari
 Advanced Himawari Imager (AHI)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+The AHI was designed based off of ABI (Himawari-8 actually had the first ABI-generation imager launched into space!), but with a few differences.
+
+.. code-block:: Python
+
+    import s3fs
+    import matplotlib.pyplot as plt
+    from datetime import datetime
+    import os
+    import subprocess
+    import satpy
+    import glob
+    import cartopy.crs as ccrs
+
+    fs = s3fs.S3FileSystem(anon=True)
+
+    dt = datetime(2024,8,10,6,20)
+    file_location = fs.glob(dt.strftime('s3://noaa-himawari9/AHI-L1b-FLDK/%Y/%m/%d/%H%M/HS_H09_%Y%m%d_%H%M_B13_FLDK_R*_S*.DAT.bz2'))
+    file_ob = [fs.open(file) for file in file_location]
+
+    # Local directory for files
+    o s.makedirs('downloaded_files', exist_ok=True)
+
+    # Loop through each file object in file_ob
+    for file in file_ob:
+
+        # Extract the filename from the file object (optional)
+        filename = file.full_name.split("/")[-1]  # Get the last part (filename)
+
+        # Download the file using fs.get
+        local_path = f"downloaded_files/{filename}"  # Define local path (modify as needed)
+
+        fs.get(file.full_name, local_path)
+
+        # Close the file object (optional, good practice)
+        file.close()
+
+        # Must have bunzip2 installed locally
+        subprocess.run(['bunzip2', local_path])
+
+    datafiles = glob.glob("downloaded_files/*.DAT")
+
+    # Load the Scene object with Satpy. Note the reader is "ahi_hsd" for Himawari
+    scene = satpy.Scene(filenames=datafiles, reader="ahi_hsd")
+    # "Load" the band(s) we want to work with. Can do multiple bands.
+    scene.load(["B13"])
+
+    # Get the CRS, embedded in the Scene
+    crs = scene["B13"].attrs["area"].to_cartopy_crs()
+
+    # Set up the figure
+    fig = plt.figure(figsize=(7, 7))
+    ax = fig.add_axes([0, 0, 1, 1], projection=crs)
+    ax.coastlines()
+
+    # Get the data and us imshow to visualize
+    ir_data = scene["B13"].compute().data
+    img = ax.imshow(
+        ir_data,
+        transform=crs,
+        extent=crs.bounds,
+        vmin=200,
+        vmax=320,
+        cmap=plt.get_cmap("viridis_r"),
+    )
+    plt.title('Himawari-9 Full Disk B13')
+
+    cbar_axes = [0.02, -0.04, 0.98, 0.03] # left bottom width height
+
+    cbaxes2 = fig.add_axes(cbar_axes)
+    cbar2 = plt.colorbar(
+       img,
+        orientation="horizontal",
+        extend="both",
+        ax=ax,
+        cax=cbaxes2,
+    )
+    cbar2.set_label('10.35-µm brightness temperature [K]', fontsize=10)
+
+plt.savefig('h9_b13_FD.png',bbox_inches='tight')
+
 Meteosat Third Generation (MTG)
 -------------------------------
 
