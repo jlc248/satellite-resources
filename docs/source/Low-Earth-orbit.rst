@@ -21,6 +21,14 @@ Each satellite has a VIS/IR imager (VIIRS), an IR sounder (CrIS), a microwave so
 VIIRS
 ~~~~~
 
+The Visible Infrared Imaging Radiometer Suite, VIIRS, is a scanning radiometer with 5 high-resolution Imagery bands (or I-bands), 16 Moderate resolution bands (M-bands) and a Day/Night band (DNB). The JPSS satellites are in the same orbital plane as NASA's A-Train constellation but at a higher altitude (JPSS altitude is about 824 km). The JPSS satellites are sun synchronous with an equator crossing time of 1330 (local time).
+
+A rotating mirror reflects radiation onto a set of CCD detectors; a single scan relates to a rotation of the mirror. A single VIIRS scan is completed in 1.779 seconds - the mirror rotation rate is slightly faster than the spec but is within tolerance. The M bands and the day/night band have 16 detectors per scan (750 m spatial resolution per pixel), while the I bands have 32 detectors per scan (375 m resolution per pixel).
+
+VIIRS has a swath of about 3040 km in the cross-track direction, while MODIS has a swath width of 2330 km. With VIIRS, there are no coverage gaps in the Tropics as there are with MODIS.
+
+This table helps summarize the VIIRS channels.
+
 +-------------+---------------------+------------------+---------------+
 | Band Number |  Central Wavelength | Nadir Resolution | Gain          |
 +=============+=====================+==================+===============+
