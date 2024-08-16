@@ -258,10 +258,16 @@ The Himawari geostationary satellites were launched and are managed by the Japan
 Advanced Himawari Imager (AHI)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The AHI was designed based off of ABI (Himawari-8 actually had the first ABI-generation imager launched into space!), but with a few differences.
+The AHI was designed based off of ABI (Himawari-8 actually had the first ABI-generation imager launched into space!), but with a few differences:
+
+-  AHI has a green visible band (0.51 µm), but ABI does not.
+-  ABI has a cirrus band (1.38 µm), but AHI does not.
+-  The resolution of B05 (1.6 µm) on AHI is 2 km, whereas the resolution of C05 (1.6 µm) on AHI is 1 km
+
+The table below summarizes the 16 AHI bands.
 
 .. image:: ../_static/images/h9_bands.png
-  :width: 600
+  :width: 500
   :alt: Himawari-9 band table.
 
 Data Access
@@ -322,7 +328,7 @@ Himawari data can be accessed via NOAA's Open Data Dissemination Program (NODD).
     plt.savefig('h9_b13_FD.png',bbox_inches='tight')
 
 ..  image:: ../_static/images/h9_b13_FD.png
-  :width: 600
+  :width: 500
   :alt: Himawari-9 B13 image.
 
 Meteosat Third Generation (MTG)
