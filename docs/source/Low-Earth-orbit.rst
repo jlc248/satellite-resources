@@ -77,6 +77,24 @@ This table helps summarize the VIIRS channels.
 |    DNB      |   0.7 µm            |   500 m          | multiple      |
 +-------------+---------------------+------------------+---------------+
 
+Geolocation files
+,,,,,,,,,,,,,,,,,
+
+Geolocation files are produced separately. Here are their codes:
+
+- I-band SDR geolocation files
+  – GIMGO: projected onto smooth ellipsoid (WGS84 ellipsoid)
+  – GITCO: parallax-corrected for terrain
+- M-band SDR geolocation files
+  – GMODO: projected onto smooth ellipsoid
+  – GMTCO: parallax-corrected for terrain
+- Day/Night Band geolocation file
+  – GDNBO: projected onto smooth ellipsoid 
+- EDR geolocation files (use ground-track Mercator projection)
+  – GIGTO: I-band EDR geolocation
+  – GMGTO: M-band EDR geolocation
+  – GNCCO: Day/Night Band EDR (NCC) geolocation
+
 .. seealso::
 
   - `VIIRS Imagery EDR User's Guide <https://rammb.cira.colostate.edu/projects/npp/VIIRS_Imagery_EDR_Users_Guide.pdf>`_
