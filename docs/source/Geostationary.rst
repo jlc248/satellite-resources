@@ -255,6 +255,10 @@ Himawari
 
 The Himawari geostationary satellites were launched and are managed by the Japanese Meteorological Agency (JMA). The main instrument, AHI, covers east Asia, the west Pacific, and Australia.
 
+.. image:: https://en.wikipedia.org/wiki/Himawari_9#/media/File:Himawari-9_full-disc_2017-01-24_0240Z.jpg
+  :width: 500
+  :alt: First FD image of Himawari-9
+
 Advanced Himawari Imager (AHI)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
