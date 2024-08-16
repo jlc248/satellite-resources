@@ -253,15 +253,21 @@ Notebook examples & exercises
 Himawari
 --------
 
+The Himawari geostationary satellites were launched and are managed by the Japanese Meteorological Agency (JMA). The main instrument, AHI, covers east Asia, the west Pacific, and Australia.
+
 Advanced Himawari Imager (AHI)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The AHI was designed based off of ABI (Himawari-8 actually had the first ABI-generation imager launched into space!), but with a few differences.
 
+.. image:: ../_static/images/h9_bands.png
+  :width: 600
+  :alt: Himawari-9 band table.
+
 Data Access
 ~~~~~~~~~~~
 
-Himawari data can be accessed via NOAA's Open Data Dissemination Program (NODD). See `here for AWS data <https://registry.opendata.aws/noaa-himawari/>`_ for Himawari-9. The script below will download the data and use `satpy` to read and process the data for visualization. `Satpy <https://satpy.readthedocs.io/en/stable/index.html>`_ is a very powerful tool for satellite I/O and processing. It can handle files from ABI, AHI, FCI, ATMS, VIIRS, IASI, and other instruments. 
+Himawari data can be accessed via NOAA's Open Data Dissemination Program (NODD). See `here for AWS data <https://registry.opendata.aws/noaa-himawari/>`_ for Himawari-9. The script below will download the data and use ``satpy`` to read the remote files and process the data for visualization. `Satpy <https://satpy.readthedocs.io/en/stable/index.html>`_ is a very powerful tool for satellite I/O and processing. It can handle files from ABI, AHI, FCI, ATMS, VIIRS, IASI, and other instruments. 
 
 .. code-block:: Python
 
@@ -269,8 +275,6 @@ Himawari data can be accessed via NOAA's Open Data Dissemination Program (NODD).
     from datetime import datetime
     import os
     import satpy
-
-    fs = s3fs.S3FileSystem(anon=True)
 
     dt = datetime(2024,8,10,6,20)
 
@@ -318,7 +322,7 @@ Himawari data can be accessed via NOAA's Open Data Dissemination Program (NODD).
     plt.savefig('h9_b13_FD.png',bbox_inches='tight')
 
 ..  image:: ../_static/images/h9_b13_FD.png
-  :width: 900
+  :width: 600
   :alt: Himawari-9 B13 image.
 
 Meteosat Third Generation (MTG)
