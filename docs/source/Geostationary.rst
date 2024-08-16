@@ -287,11 +287,11 @@ AHI has the following sectors:
 The image and table below show some characteristics of the sectors. The "Target region" is analogous to ABI's mesoscale sector, but it updates every 2.5 minutes instead of every 1 minute.
 
 .. image:: ../_static/images/ahi_sectors.png
-  :width: 400
+  :width: 500
   :alt: Map of AHI sectors
 
 .. image:: ../_static/images/ahi_sectors2.png
-  :width: 400
+  :width: 500
   :alt: Table with sector information
 
 Data Viewing
