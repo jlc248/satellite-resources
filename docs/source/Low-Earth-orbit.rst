@@ -83,22 +83,29 @@ Geolocation files
 Geolocation files are produced separately. Here are their codes:
 
 * I-band SDR geolocation files
+
   * GIMGO: projected onto smooth ellipsoid (WGS84 ellipsoid)
+
   * GITCO: parallax-corrected for terrain
+
 * M-band SDR geolocation files
 
-    – GMODO: projected onto smooth ellipsoid
-    – GMTCO: parallax-corrected for terrain
+  * GMODO: projected onto smooth ellipsoid
 
-- Day/Night Band geolocation file
+  * GMTCO: parallax-corrected for terrain
 
-    – GDNBO: projected onto smooth ellipsoid 
+* Day/Night Band geolocation file
 
-- EDR geolocation files (use ground-track Mercator projection)
+  * GDNBO: projected onto smooth ellipsoid 
 
-    – GIGTO: I-band EDR geolocation
-    – GMGTO: M-band EDR geolocation
-    – GNCCO: Day/Night Band EDR (NCC) geolocation
+* EDR geolocation files (use ground-track Mercator projection)
+
+  * GIGTO: I-band EDR geolocation
+
+  * GMGTO: M-band EDR geolocation
+
+  * GNCCO: Day/Night Band EDR (NCC) geolocation
+
 
 .. seealso::
 
