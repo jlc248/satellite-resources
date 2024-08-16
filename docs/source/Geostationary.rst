@@ -310,7 +310,7 @@ The AHI was designed based off of ABI (Himawari-8 actually had the first ABI-gen
     ax = fig.add_axes([0, 0, 1, 1], projection=crs)
     ax.coastlines()
 
-    # Get the data and us imshow to visualize
+    # Get the data and use imshow to visualize
     ir_data = scene["B13"].compute().data
     img = ax.imshow(
         ir_data,
@@ -334,7 +334,11 @@ The AHI was designed based off of ABI (Himawari-8 actually had the first ABI-gen
     )
     cbar2.set_label('10.35-µm brightness temperature [K]', fontsize=10)
 
-plt.savefig('h9_b13_FD.png',bbox_inches='tight')
+    plt.savefig('h9_b13_FD.png',bbox_inches='tight')
+
+..  image:: ../_static/images/h9_b13_FD.png
+  :width: 900
+  :alt: Himawari-9 B13 image.
 
 Meteosat Third Generation (MTG)
 -------------------------------
