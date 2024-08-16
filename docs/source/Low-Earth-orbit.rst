@@ -77,6 +77,10 @@ This table helps summarize the VIIRS channels.
 |    DNB      |   0.7 µm            |   500 m          | multiple      |
 +-------------+---------------------+------------------+---------------+
 
+.. seealso::
+  - `VIIRS ATBD <https://www.star.nesdis.noaa.gov/jpss/documents/ATBD/D0001-M01-S01-003_JPSS_ATBD_VIIRS-SDR_E.pdf>`_
+  - `Beginner's Guide to VIIRS Imagery Data <http://rammb.cira.colostate.edu/projects/npp/Beginner_Guide_to_VIIRS_Imagery_Data.pdf>`_
+
 CrIS
 ~~~~
 
