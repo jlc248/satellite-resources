@@ -82,12 +82,10 @@ Geolocation files
 
 Geolocation files are produced separately. Here are their codes:
 
-- I-band SDR geolocation files
-
-    – GIMGO: projected onto smooth ellipsoid (WGS84 ellipsoid)
-    – GITCO: parallax-corrected for terrain
-
-- M-band SDR geolocation files
+* I-band SDR geolocation files
+  * GIMGO: projected onto smooth ellipsoid (WGS84 ellipsoid)
+  * GITCO: parallax-corrected for terrain
+* M-band SDR geolocation files
 
     – GMODO: projected onto smooth ellipsoid
     – GMTCO: parallax-corrected for terrain
