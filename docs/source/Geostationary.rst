@@ -266,6 +266,7 @@ The AHI was designed based off of ABI (Himawari-8 actually had the first ABI-gen
 
 -  AHI has a green visible band (0.51 µm), but ABI does not.
 -  ABI has a cirrus band (1.38 µm), but AHI does not.
+- The 0.64-µm band is "B03" on AHI, whereas it is "C02" on ABI.
 -  The resolution of B05 (1.6 µm) on AHI is 2 km, whereas the resolution of C05 (1.6 µm) on AHI is 1 km
 
 The table below summarizes the 16 AHI bands.
@@ -273,6 +274,33 @@ The table below summarizes the 16 AHI bands.
 .. image:: ../_static/images/h9_bands.png
   :width: 500
   :alt: Himawari-9 band table.
+
+Sectors
+,,,,,,,
+
+AHI has the following sectors:
+
+-  Full disk (every 10 minutes)
+-  Japan (every 2.5 minutes, divided into two sub-sectors)
+-  Target region (every 2.5 minutes)
+
+The image and table below show some characteristics of the sectors. The "Target region" is analogous to ABI's mesoscale sector, but it updates every 2.5 minutes instead of every 1 minute.
+
+.. image:: ../_static/images/ahi_sectors.png
+  :width: 400
+  :alt: Map of AHI sectors
+
+.. image:: ../_static/images/ahi_sectors2.png
+  :width: 400
+  :alt: Table with sector information
+
+Data Viewing
+~~~~~~~~~~~~
+
+Here are a few nice webpages to view real-time imagery.
+
+- `CIRA Slider <https://rammb-slider.cira.colostate.edu/?sat=himawari&sec=full_disk&x=11008&y=11008&z=0&angle=0&im=12&ts=1&st=0&et=0&speed=130&motion=loop&maps%5Bborders%5D=white&p%5B0%5D=geocolor&opacity%5B0%5D=1&pause=0&slider=-1&hide_controls=0&mouse_draw=0&follow_feature=0&follow_hide=0&s=rammb-slider&draw_color=FFD700&draw_width=6>`_
+- `NESDIS OSPO <https://www.ospo.noaa.gov/products/imagery/himawari.html>`_
 
 Data Access
 ~~~~~~~~~~~
