@@ -135,9 +135,13 @@ Data Access
 
 * `NOAA Open Data Dissemination -- JPSS <https://registry.opendata.aws/noaa-jpss/>`_
 
+Notebooks
+,,,,,,,,,
+
 Check out the notebook below for an example on how to process and visualize VIIRS data (`source notebook <https://colab.research.google.com/drive/1CjMcLrABlFsq80PDtEhpNyHJSL4tuw_Q?usp=sharing>`_).
 
 .. toctree::
+
     Processing VIIRS
 
 .. seealso::
