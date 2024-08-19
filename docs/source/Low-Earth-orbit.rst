@@ -18,6 +18,12 @@ Each satellite has a VIS/IR imager (VIIRS), an IR sounder (CrIS), a microwave so
     :width: 400
     :alt: JPSS constellation cartoon
 
+The bubble chart below lists the different products from JPSS instruments. SDRs are Level-1b reprocessed Sensor Data Records. The SDRs are used as input to produce numerous Environmental Data Record (EDRs), which can be considered "Level-2" products. Most users shouldn't ever have to look at Raw Data Records (RDRs), which are the raw Level-1 data.
+
+.. image:: ../_static/images/JPSS_Products_Bubble_Chart.jpg
+    :width: 500
+    :alt: Bubble chart with JPSS instrument products
+
 VIIRS
 ~~~~~
 
