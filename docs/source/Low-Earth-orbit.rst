@@ -118,6 +118,11 @@ Geolocation files are produced separately. Here are their codes:
   - `VIIRS Imagery EDR User's Guide <https://rammb.cira.colostate.edu/projects/npp/VIIRS_Imagery_EDR_Users_Guide.pdf>`_
   - `VIIRS ATBD <https://www.star.nesdis.noaa.gov/jpss/documents/ATBD/D0001-M01-S01-003_JPSS_ATBD_VIIRS-SDR_E.pdf>`_
 
+Data Viewing
+,,,,,,,,,,,,
+
+* `CIRA Slider <https://rammb-slider.cira.colostate.edu/?sat=jpss&sec=northern_hemisphere&x=14976&y=16544&z=0&angle=0&im=12&ts=1&st=0&et=0&speed=130&motion=loop&maps%5Bborders%5D=white&mhidden%5Bborders%5D=1&p%5B0%5D=cira_geocolor&opacity%5B0%5D=1&pause=0&slider=-1&hide_controls=0&mouse_draw=0&follow_feature=0&follow_hide=0&s=rammb-slider&draw_color=FFD700&draw_width=6>`_
+* `VIIRS Today <https://ge.ssec.wisc.edu/viirs-today/>`_
 
 CrIS
 ~~~~
