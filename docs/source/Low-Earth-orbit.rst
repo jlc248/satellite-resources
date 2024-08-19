@@ -124,6 +124,17 @@ Data Viewing
 * `CIRA Slider <https://rammb-slider.cira.colostate.edu/?sat=jpss&sec=northern_hemisphere&x=14976&y=16544&z=0&angle=0&im=12&ts=1&st=0&et=0&speed=130&motion=loop&maps%5Bborders%5D=white&mhidden%5Bborders%5D=1&p%5B0%5D=cira_geocolor&opacity%5B0%5D=1&pause=0&slider=-1&hide_controls=0&mouse_draw=0&follow_feature=0&follow_hide=0&s=rammb-slider&draw_color=FFD700&draw_width=6>`_
 * `VIIRS Today <https://ge.ssec.wisc.edu/viirs-today/>`_
 
+Data Access
+,,,,,,,,,,,
+
+* `NASA LAADS <https://ladsweb.modaps.eosdis.nasa.gov/search/>`_
+
+  * Can search by dataset, time, and location
+
+* University of Wisconsin `SIPS <https://sips.ssec.wisc.edu/products>`_
+
+* `NOAA Open Data Dissemination -- JPSS <https://registry.opendata.aws/noaa-jpss/>`_
+
 CrIS
 ~~~~
 
