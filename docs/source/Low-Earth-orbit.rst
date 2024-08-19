@@ -115,8 +115,8 @@ Geolocation files are produced separately. Here are their codes:
 
 .. seealso::
 
-  - `VIIRS Imagery EDR User's Guide <https://rammb.cira.colostate.edu/projects/npp/VIIRS_Imagery_EDR_Users_Guide.pdf>`_
-  - `VIIRS ATBD <https://www.star.nesdis.noaa.gov/jpss/documents/ATBD/D0001-M01-S01-003_JPSS_ATBD_VIIRS-SDR_E.pdf>`_
+  * `VIIRS Imagery EDR User's Guide <https://rammb.cira.colostate.edu/projects/npp/VIIRS_Imagery_EDR_Users_Guide.pdf>`_
+  * `VIIRS ATBD <https://www.star.nesdis.noaa.gov/jpss/documents/ATBD/D0001-M01-S01-003_JPSS_ATBD_VIIRS-SDR_E.pdf>`_
 
 Data Viewing
 ,,,,,,,,,,,,
@@ -134,6 +134,12 @@ Data Access
 * University of Wisconsin `SIPS <https://sips.ssec.wisc.edu/products>`_
 
 * `NOAA Open Data Dissemination -- JPSS <https://registry.opendata.aws/noaa-jpss/>`_
+
+.. seealso::
+
+  * https://github.com/jpss-nodd/python-scripts
+
+    * For downloading and visualizing JPSS VIIRS data
 
 CrIS
 ~~~~
