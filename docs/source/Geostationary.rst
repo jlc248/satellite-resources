@@ -369,7 +369,7 @@ Meteosat Third Generation (MTG)
 Flexible Combined Imager (FCI)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The FCI has channels 16 spectral ranges covering visible to infrared wavelengths. The table below shows the FCI spectral channel spectral and spatial resolutions. The spectral channels VIS 0.6, NIR 2.2, IR 3.8 and IR 10.5 are delivered both in Normal Resolution (NR) and High Resolution (HR) spatial sampling configurations.
+The FCI has 16 spectral ranges covering visible to infrared wavelengths. The table below shows the FCI spectral channel spectral and spatial resolutions. The spectral channels VIS 0.6, NIR 2.2, IR 3.8 and IR 10.5 are delivered both in Normal Resolution (NR) and High Resolution (HR) spatial sampling configurations.
 
 +------------------+---------------------+------------------+--------------------+
 | Spectral Channel |  Central Wavelength |  Sepctral Width  |  Nadir resolution  |
@@ -417,7 +417,7 @@ The images below show the approximate pixel area in km^2, assuming 1-km spatial 
   :width: 450
   :alt: Map of FCI pixel area over Europe
 
-Scan modes
+Scan Modes
 ,,,,,,,,,,
 
 FCI has two scanning modes:
@@ -427,8 +427,18 @@ FCI has two scanning modes:
 
 The nominal operational mode is based on *two* imager satellites. In the full operational constellation, one MTG-I satellite performs the full Earth-disc scanning in a 10-minute repeat cycle, the second covers the northern quarter of the full disc, over Europe in 2.5 minutes. See the `FCI data guide <https://user.eumetsat.int/resources/user-guides/mtg-fci-level-1c-data-guide>`_ for more details.
 
+File Format
+,,,,,,,,,,,
 
+The file format is rather long for FCI data. Most users will only be interested in the Level 1c (Level 1b science data rectified to a reference grid) or Level 2 (Level 1b or Level 1c science data converted to geophysical values). Fortunately, the data are in netCDF4.
 
+The most important parts are the ``start_time`` and ``end_time``. The ``yyyyMMddhhmmss`` refers to the processing time of the file.
+
+.. image ../_static/images/FCI-filename.png
+  :width: 700
+  :alt: FCI file format explanation.
+
+All of the FCI channels are in the same netCDF (unlike ABI). Each channel is in up to two netCDF groups: FDHSI (Full Disk High Spectral Resolution Imagery), and HRFI (High Spatial Resolution Fast Imagery).
 
 Lightning Imager (LI)
 ~~~~~~~~~~~~~~~~~~~~~
