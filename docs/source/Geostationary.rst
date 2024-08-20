@@ -401,8 +401,9 @@ There are 5 Level-2 products for LI:
 4.  Accumulated Flash (LI-2-AF-x-FD-x)
 5.  Accumulated Flash Radiance (LI-2-AFR-x-FD-x)
 
-The first two are point-based, whereas the latter three are grid-based. All Level-2 products have 30-second temporal resolution. The gridded products have been remapped to the Level 1c 2-km grid. See the MTG LI Level-2 Guide for many more details on the data product types and their processing. 
+The first two are point-based, whereas the latter three are grid-based. All Level-2 products have 30-second temporal resolution. The gridded products have been remapped to the Level 1c 2-km grid. See the `MTG LI Level-2 Guide <https://user.eumetsat.int/resources/user-guides/mtg-li-level-2-data-guide>`_ for many more details on the data product types and their processing. 
 
 .. seealso::
+  `MTG FCI Level-1c Guide <https://user.eumetsat.int/resources/user-guides/mtg-fci-level-1c-data-guide>`_
   `MTG LI Level-2 Guide <https://user.eumetsat.int/resources/user-guides/mtg-li-level-2-data-guide>`_
 
