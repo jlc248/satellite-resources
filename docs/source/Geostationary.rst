@@ -434,7 +434,7 @@ The file format is rather long for FCI data. Most users will only be interested 
 
 The most important parts are the ``start_time`` and ``end_time``. The ``yyyyMMddhhmmss`` refers to the processing time of the file.
 
-.. image ../_static/images/FCI-filename.png
+.. image:: ../_static/images/FCI-filename.jpg
   :width: 700
   :alt: FCI file format explanation.
 
