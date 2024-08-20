@@ -390,6 +390,19 @@ The LI domain consists of an area covered by four identical detectors with a sma
   :width: 500
   :alt: Lightning Imager pixel area
 
+Data Types
+,,,,,,,,,,
+
+There are 5 Level-2 products for LI:
+
+1.  Level 2 groups (LI-2-LGR-x-FD-x)
+2.  Level 2 flashes (LI-2-LFL-x-FD-x)
+3.  Accumulated Flash Area (LI-2-AFA-x-FD-x)
+4.  Accumulated Flash (LI-2-AF-x-FD-x)
+5.  Accumulated Flash Radiance (LI-2-AFR-x-FD-x)
+
+The first two are point-based, whereas the latter three are grid-based. All Level-2 products have 30-second temporal resolution.
+
 .. seealso::
   `MTG LI Level-2 Guide <https://user.eumetsat.int/resources/user-guides/mtg-li-level-2-data-guide>`_
 
