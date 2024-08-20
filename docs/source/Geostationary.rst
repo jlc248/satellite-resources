@@ -369,7 +369,9 @@ Meteosat Third Generation (MTG)
 Flexible Combined Imager (FCI)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-+------------------+---------------------+------------------+---------=----------+
+The FCI has channels 16 spectral ranges covering visible to infrared wavelengths. The table below shows the FCI spectral channel spectral and spatial resolutions. The spectral channels VIS 0.6, NIR 2.2, IR 3.8 and IR 10.5 are delivered both in Normal Resolution (NR) and High Resolution (HR) spatial sampling configurations.
+
++------------------+---------------------+------------------+--------------------+
 | Spectral Channel |  Central Wavelength |  Sepctral Width  |  Nadir resolution  |
 +==================+=====================+==================+====================+
 |    VIS 0.4       |   0.444 µm          |   0.06 µm        | 1.0 km             |
@@ -404,6 +406,29 @@ Flexible Combined Imager (FCI)
 +------------------+---------------------+------------------+--------------------+
 |    IR 13.3       |   13.30 µm          |   0.60 µm        | 2.0 km             |
 +------------------+---------------------+------------------+--------------------+
+
+The images below show the approximate pixel area in km^2, assuming 1-km spatial resolution at nadir. You can see how pixel area increases rapidly once you hit 4-5 km^2. Figures are courtesy of EUMETSAT. The red dots in the second figure are cities, from south to north: Madrid, Prague, Stockholm, and Helsinki.
+
+.. image:: ../_static/images/FCI-pixel-size.png
+  :width: 700
+  :alt: Map of FCI pixel area over the disk
+
+.. image:: ../_static/images/FCI-pixel-size-Europe.png
+  :width: 450
+  :alt: Map of FCI pixel area over Europe
+
+Scan modes
+,,,,,,,,,,
+
+FCI has two scanning modes:
+
+1.  Full Disc Scanning Service (FDSS) — provides observations in all of the 16 spectral channels (NR) and 4 spectral channels at high resolution (HR) (see Table 1) over the full disc visible from the geostationary 0° longitude position. The update time is 10 minutes.
+2.  Rapid Scanning Service (RSS) — provides samples in all of the 16 spectral channels (NR) and 4 spectral channels at high resolution (HR) (see Table 1) over the quarter of the disc, LAC4_4 (i.e., Europe and far Northern Africa). The update time is 2.5 minutes.
+
+The nominal operational mode is based on *two* imager satellites. In the full operational constellation, one MTG-I satellite performs the full Earth-disc scanning in a 10-minute repeat cycle, the second covers the northern quarter of the full disc, over Europe in 2.5 minutes. See the `FCI data guide <https://user.eumetsat.int/resources/user-guides/mtg-fci-level-1c-data-guide>`_ for more details.
+
+
+
 
 Lightning Imager (LI)
 ~~~~~~~~~~~~~~~~~~~~~
