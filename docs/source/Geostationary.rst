@@ -371,3 +371,25 @@ Flexible Combined Imager (FCI)
 
 Lightning Imager (LI)
 ~~~~~~~~~~~~~~~~~~~~~
+
+The main benefits of geostationary lightning observations are that they provide homogeneous and contiuous information on lightning location and frequency, at low latency. Like the GOES-R GLM, MTG's Lightning Imager (LI) has a single band at 777.4 nm, and can detect optical emissions from both in-cloud and cloud-to-ground lightning. Lightning is not recognized by its bright radiance alone, but by its transient short pulse character, possibly also against a bright background. A variable adapting threshold has to be used for each pixel which takes into account the change in the background radiance.
+
+LI has a nadir resolution of 4.5 km. Like GLM, it also organizes observations into events, groups, and flashes, based on an algorithm with time and space thresholds. See the example below of the Level-2 processing sequence from LI (courtesy of EUMETSAT).
+
+.. image:: ../_static/images/LI-events-groups-flashes.png
+  :width: 500
+  :alt: Lightning Imager schematic of how events, groups, and flashes are formed.
+
+The LI domain consists of an area covered by four identical detectors with a small overlap. However, users of the Level-2 products will not "see" the detector structure. The pixel area for LI degrades quickly 50-70 km^2 (figures courtesy of EUMETSAT).
+
+.. image:: ../_static/images/LI-domain.png
+  :width: 500
+  :alt: Lightning Imager domain
+
+.. image:: ../_static/images/LI-pixel-area.png
+  :width: 500
+  :alt: Lightning Imager pixel area
+
+.. seealso::
+  `MTG LI Level-2 Guide <https://user.eumetsat.int/resources/user-guides/mtg-li-level-2-data-guide>`_
+
