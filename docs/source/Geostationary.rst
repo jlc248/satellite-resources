@@ -452,7 +452,7 @@ Near-real time data dissemination via EUMETCast is as follows:
 |      |                                                                                        |                                                                                             |
 |      | `EUMETCast Terrestrial <https://user.eumetsat.int/data-access/eumetcast-terrestrial>`_ |                                                                                             |
 +------+----------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
-| RSS  | `EUMETCast Satellite <https://user.eumetsat.int/data-access/eumetcast-europe>`_ &      | `EUMETCast Satellite <https://user.eumetsat.int/data-access/eumetcast-europe>`_. &          |
+| RSS  | `EUMETCast Satellite <https://user.eumetsat.int/data-access/eumetcast-europe>`_ &      | `EUMETCast Satellite <https://user.eumetsat.int/data-access/eumetcast-europe>`_ &           |
 |      |                                                                                        |                                                                                             |
 |      | `EUMETCast Terrestrial <https://user.eumetsat.int/data-access/eumetcast-terrestrial>`_ | `EUMETCast Terrestrial <https://user.eumetsat.int/data-access/eumetcast-terrestrial>`_      |
 +------+----------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
