@@ -446,16 +446,14 @@ Data Access
 Near-real time data dissemination via EUMETCast is as follows:
 
 +------+----------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
-|      |  16 Channels at NR                                                                     |     4 Channels at HR                                                    
-                                | 
+|      |  16 Channels at NR                                                                     |     4 Channels at HR                                                                        | 
 +======+========================================================================================+=============================================================================================+
 | FDSS | `EUMETCast Satellite <https://user.eumetsat.int/data-access/eumetcast-europe>`_ &      | `EUMETCast Terrestrial <https://user.eumetsat.int/data-access/eumetcast-terrestrial>`_ only |
 |      |                                                                                        |                                                                                             |
-|      | `EUMETCast Terrestrial <https://user.eumetsat.int/data-access/eumetcast-terrestrial>`_ |                                                                         
-                    |
+|      | `EUMETCast Terrestrial <https://user.eumetsat.int/data-access/eumetcast-terrestrial>`_ |                                                                                             |
 +------+----------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
-| RSS  | `EUMETCast Satellite <https://user.eumetsat.int/data-access/eumetcast-europe>`_ &      | `EUMETCast Satellite <https://user.eumetsat.int/data-access/eumetcast-europe>`_. &        |
-|      |                                                                                        |                            |
+| RSS  | `EUMETCast Satellite <https://user.eumetsat.int/data-access/eumetcast-europe>`_ &      | `EUMETCast Satellite <https://user.eumetsat.int/data-access/eumetcast-europe>`_. &          |
+|      |                                                                                        |                                                                                             |
 |      | `EUMETCast Terrestrial <https://user.eumetsat.int/data-access/eumetcast-terrestrial>`_ | `EUMETCast Terrestrial <https://user.eumetsat.int/data-access/eumetcast-terrestrial>`_      |
 +------+----------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
 
