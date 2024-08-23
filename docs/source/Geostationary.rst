@@ -440,6 +440,23 @@ The most important parts are the ``start_time`` and ``end_time``. The ``yyyyMMdd
 
 All of the FCI channels are in the same netCDF (unlike ABI). Each channel is in up to two netCDF groups: FDHSI (Full Disk High Spectral Resolution Imagery), and HRFI (High Spatial Resolution Fast Imagery).
 
+Data Access
+,,,,,,,,,,,
+
+Near-real time data dissemination via EUMETCast is as follows:
+
++------+-----------------------+----------------------------+
+|      |  16 Channels at NR    |     4 Channels at HR       | 
++======+=======================+============================+
+| FDSS | EUMETCast Satellite & | EUMETCast Terrestrial only |
+|      |                       |                            |
+|      | EUMETCast Terrestrial |                            |
++------+-----------------------+----------------------------+
+| RSS  | EUMETCast Satellite & | EUMETCast Satellite &      |
+|      |                       |                            |
+|      | EUMETCast Terrestrial | EUMETCast Terrestrial      |
++------+---------------------------------+------------------+
+
 Lightning Imager (LI)
 ~~~~~~~~~~~~~~~~~~~~~
 
