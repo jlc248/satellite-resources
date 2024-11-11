@@ -499,7 +499,7 @@ See these notebooks on working with MTG LI data.
 .. toctree::
     :maxdepth: 3
 
-    MTG_Lightning_Imgager_points
+    MTG Lightning Imager data visualization
 
 .. seealso::
 
