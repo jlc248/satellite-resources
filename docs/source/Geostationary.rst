@@ -440,22 +440,6 @@ The most important parts are the ``start_time`` and ``end_time``. The ``yyyyMMdd
 
 All of the FCI channels are in the same netCDF (unlike ABI). Each channel is in up to two netCDF groups: FDHSI (Full Disk High Spectral Resolution Imagery), and HRFI (High Spatial Resolution Fast Imagery).
 
-Data Access
-,,,,,,,,,,,
-
-Near-real time data dissemination via EUMETCast is as follows:
-
-+------+----------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
-|      |  16 Channels at NR                                                                     |     4 Channels at HR                                                                        | 
-+======+========================================================================================+=============================================================================================+
-| FDSS | `EUMETCast Satellite <https://user.eumetsat.int/data-access/eumetcast-europe>`_ &      | `EUMETCast Terrestrial <https://user.eumetsat.int/data-access/eumetcast-terrestrial>`_ only |
-|      |                                                                                        |                                                                                             |
-|      | `EUMETCast Terrestrial <https://user.eumetsat.int/data-access/eumetcast-terrestrial>`_ |                                                                                             |
-+------+----------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
-| RSS  | `EUMETCast Satellite <https://user.eumetsat.int/data-access/eumetcast-europe>`_ &      | `EUMETCast Satellite <https://user.eumetsat.int/data-access/eumetcast-europe>`_ &           |
-|      |                                                                                        |                                                                                             |
-|      | `EUMETCast Terrestrial <https://user.eumetsat.int/data-access/eumetcast-terrestrial>`_ | `EUMETCast Terrestrial <https://user.eumetsat.int/data-access/eumetcast-terrestrial>`_      |
-+------+----------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
 
 Lightning Imager (LI)
 ~~~~~~~~~~~~~~~~~~~~~
@@ -478,12 +462,10 @@ The LI domain consists of an area covered by four identical detectors with a sma
   :width: 500
   :alt: Lightning Imager pixel area
 
-Data Types and Access
-,,,,,,,,,,,,,,,,,,,,,
+Data Types
+,,,,,,,,,,
 
 There are 6 products for LI:
-
-https://data.eumetsat.int/product/EO:EUM:DAT:0690
 
 +-----------------------------------------+------------------------------------------------------------------------+
 |        Collection                       |                              ID                                        | 
@@ -501,7 +483,9 @@ https://data.eumetsat.int/product/EO:EUM:DAT:0690
 |  LI Accumulated Flash Radiance - MTG    | `EO:EUM:DAT:0688 <https://data.eumetsat.int/product/EO:EUM:DAT:0688>`_ |
 +-----------------------------------------+------------------------------------------------------------------------+
 
-The first three are point-based, whereas the latter three are grid-based. All Level-2 products have 30-second temporal resolution. The gridded products have been remapped to the Level 1c 2-km grid. See the `MTG LI Level-2 Guide <https://user.eumetsat.int/resources/user-guides/mtg-li-level-2-data-guide>`_ for many more details on the data product types and their processing. 
+The first three are point-based, whereas the latter three are grid-based. All Level-2 products have 30-second temporal resolution in near-real-time, but appear to have 10-minute resolution in the archive or "Data Store". The gridded products have been remapped to the Level 1c 2-km grid. See the `MTG LI Level-2 Guide <https://user.eumetsat.int/resources/user-guides/mtg-li-level-2-data-guide>`_ for many more details on the data product types and their processing. 
+
+
 
 Notebooks
 ,,,,,,,,,
@@ -513,6 +497,25 @@ See these notebooks on working with MTG LI data.
 
     MTG Lightning Imager data visualization
     MTG_Lightning_Imager_gridded_data
+
+Data Access
+~~~~~~~~~~~
+
+Near-real-time data dissemination via EUMETCast is as follows:
+
++------+----------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
+|      |  16 Channels at NR                                                                     |     4 Channels at HR                                                                        | 
++======+========================================================================================+=============================================================================================+
+| FDSS | `EUMETCast Satellite <https://user.eumetsat.int/data-access/eumetcast-europe>`_ &      | `EUMETCast Terrestrial <https://user.eumetsat.int/data-access/eumetcast-terrestrial>`_ only |
+|      |                                                                                        |                                                                                             |
+|      | `EUMETCast Terrestrial <https://user.eumetsat.int/data-access/eumetcast-terrestrial>`_ |                                                                                             |
++------+----------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
+| RSS  | `EUMETCast Satellite <https://user.eumetsat.int/data-access/eumetcast-europe>`_ &      | `EUMETCast Satellite <https://user.eumetsat.int/data-access/eumetcast-europe>`_ &           |
+|      |                                                                                        |                                                                                             |
+|      | `EUMETCast Terrestrial <https://user.eumetsat.int/data-access/eumetcast-terrestrial>`_ | `EUMETCast Terrestrial <https://user.eumetsat.int/data-access/eumetcast-terrestrial>`_      |
++------+----------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
+
+For archived data, See the `MTG Data Access Guide <https://user.eumetsat.int/resources/user-guides/mtg-data-access-guide>`_ for lots of good information and associated tools to use.
 
 .. seealso::
 
