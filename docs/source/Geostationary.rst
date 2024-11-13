@@ -478,18 +478,30 @@ The LI domain consists of an area covered by four identical detectors with a sma
   :width: 500
   :alt: Lightning Imager pixel area
 
-Data Types
-,,,,,,,,,,
+Data Types and Access
+,,,,,,,,,,,,,,,,,,,,,
 
-There are 5 Level-2 products for LI:
+There are 6 products for LI:
 
-1.  Level 2 groups (LI-2-LGR-x-FD-x)
-2.  Level 2 flashes (LI-2-LFL-x-FD-x)
-3.  Accumulated Flash Area (LI-2-AFA-x-FD-x)
-4.  Accumulated Flash (LI-2-AF-x-FD-x)
-5.  Accumulated Flash Radiance (LI-2-AFR-x-FD-x)
+https://data.eumetsat.int/product/EO:EUM:DAT:0690
 
-The first two are point-based, whereas the latter three are grid-based. All Level-2 products have 30-second temporal resolution. The gridded products have been remapped to the Level 1c 2-km grid. See the `MTG LI Level-2 Guide <https://user.eumetsat.int/resources/user-guides/mtg-li-level-2-data-guide>`_ for many more details on the data product types and their processing. 
++-----------------------------------------+------------------------------------------------------------------------+
+|        Collection                       |                              ID                                        | 
++=========================================+========================================================================+
+|  LI Lightning Events Filtered - MTG     | `EO:EUM:DAT:0690 <https://data.eumetsat.int/product/EO:EUM:DAT:0690>`_ |
++-----------------------------------------+------------------------------------------------------------------------+
+|  LI Lightning Groups - MTG              | `EO:EUM:DAT:0782 <https://data.eumetsat.int/product/EO:EUM:DAT:0782>`_ | 
++-----------------------------------------+------------------------------------------------------------------------+
+|  LI Lightning Flashes - MTG             | `EO:EUM:DAT:0691 <https://data.eumetsat.int/product/EO:EUM:DAT:0691>`_ |
++-----------------------------------------+------------------------------------------------------------------------+
+|  LI Accumulated Flashes - MTG           | `EO:EUM:DAT:0686 <https://data.eumetsat.int/product/EO:EUM:DAT:0686>`_ |
++-----------------------------------------+------------------------------------------------------------------------+
+|  LI Accumulated Flash Area - MTG        | `EO:EUM:DAT:0687 <https://data.eumetsat.int/product/EO:EUM:DAT:0687>`_ |
++-----------------------------------------+------------------------------------------------------------------------+
+|  LI Accumulated Flash Radiance - MTG    | `EO:EUM:DAT:0688 <https://data.eumetsat.int/product/EO:EUM:DAT:0688>`_ |
++-----------------------------------------+------------------------------------------------------------------------+
+
+The first three are point-based, whereas the latter three are grid-based. All Level-2 products have 30-second temporal resolution. The gridded products have been remapped to the Level 1c 2-km grid. See the `MTG LI Level-2 Guide <https://user.eumetsat.int/resources/user-guides/mtg-li-level-2-data-guide>`_ for many more details on the data product types and their processing. 
 
 Notebooks
 ,,,,,,,,,
