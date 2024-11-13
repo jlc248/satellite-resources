@@ -500,6 +500,7 @@ See these notebooks on working with MTG LI data.
     :maxdepth: 3
 
     MTG Lightning Imager data visualization
+    MTG_Lightning_Imager_gridded_data
 
 .. seealso::
 
