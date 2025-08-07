@@ -236,9 +236,9 @@ The spatial resolution of ATMS varies with frequency. Higher-frequency channels 
 +---------+--------------------+-----------------------------------+
 |   20    |    183.31±3.0      | Water Vapor Sounding (Mid Trop)   |
 +---------+--------------------+-----------------------------------+
-|   21    |    183.31±1.8      | Water Vapor Sounding (Upper Trop) |
+|   21    |    183.31±1.8      | Water Vapor Sounding (Mid Trop)   |
 +---------+--------------------+-----------------------------------+
-|   22    |    183.31±1.0      | Water Vapor Sounding (Upper Trop) |
+|   22    |    183.31±1.0      | Water Vapor Sounding (Mid Trop)   |
 +---------+--------------------+-----------------------------------+
 
 Here are the weighting functions for the 22 ATMS channels.
