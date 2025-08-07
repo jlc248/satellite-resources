@@ -153,8 +153,115 @@ Check out the notebook below for an example on how to process and visualize VIIR
 CrIS
 ~~~~
 
+The Cross-track Infrared Sounder, CrIS, is a Fourier Transform Spectrometer that provides high-resolution, three-dimensional temperature, pressure, and moisture profiles. These soundings are used to enhance weather forecasts and to support the monitoring of climate and environmental conditions. CrIS measures infrared radiation emitted by the Earth's surface and atmosphere.
+
+CrIS works in conjunction with the Advanced Technology Microwave Sounder (ATMS) to provide soundings in both clear and cloudy conditions. It scans in a step-scan fashion, observing a 3x3 array of Fields of View (FOVs) at each step. Each individual FOV has a nadir resolution of approximately 14 km. The full array is called a Field of Regard (FOR) and covers an area of roughly 50 km x 50 km. The instrument has a swath width of about 2200 km, achieving full global coverage in approximately 12 hours.
+
+The CrIS instrument has 2211 spectral channels across three bands:
+
++----------------+-----------------------------+-------------------+
+| Band           | Spectral Range              | Number of Channels|
++================+=============================+===================+
+| Long-wave IR   | 650 - 1095 $cm^{-1}$        | 713               |
+| (LWIR)         | (9.14 - 15.38 µm)           |                   |
++----------------+-----------------------------+-------------------+
+| Mid-wave IR    | 1210 - 1750 $cm^{-1}$       | 865               |
+| (MWIR)         | (5.71 - 8.26 µm)            |                   |
++----------------+-----------------------------+-------------------+
+| Short-wave IR  | 2155 - 2550 $cm^{-1}$       | 633               |
+| (SWIR)         | (3.92 - 4.64 µm)            |                   |
++----------------+-----------------------------+-------------------+
+
+.. seealso::
+
+  * `CrIS Fact Sheet <https://www.nesdis.noaa.gov/s3/2023-10/JPSS-Instrument-Fact-Sheet_CrIS.pdf>`_
+  * `CrIS ATBD <https://www.star.nesdis.noaa.gov/jpss/documents/ATBD/D0001-M01-S01-002_JPSS_ATBD_CRIS-SDR_fsr_20180614.pdf>`_
+
+Data Access
+,,,,,,,,,,,
+
+* `NOAA CLASS <https://www.class.noaa.gov/>`_
+* `NOAA Open Data Dissemination -- JPSS <https://registry.opendata.aws/noaa-jpss/>`_
+
+
 ATMS
 ~~~~
+
+The Advanced Technology Microwave Sounder, ATMS, is a cross-track scanning microwave sounder that provides atmospheric temperature and moisture profiles. A key advantage of microwave sounding is its ability to penetrate clouds, providing valuable data in all weather conditions. ATMS data is crucial for numerical weather prediction models and is used in synergy with the infrared observations from CrIS.
+
+ATMS has 22 microwave channels spanning a frequency range from 23 GHz to 183 GHz. These channels are strategically placed to measure different atmospheric properties. The lower-frequency channels provide information on surface temperature and emissivity, while channels around the 50-60 GHz oxygen absorption band provide temperature profiles. Channels around the 183 GHz water vapor absorption line provide moisture profiles.
+
+The spatial resolution of ATMS varies with frequency. Higher-frequency channels have a nadir resolution of 15.8 km, while lower-frequency channels have a resolution of up to 74.8 km. The instrument has a wide swath of approximately 2600 km, ensuring global coverage.
+
++---------+--------------------+-----------------------------------+
+| Channel | Frequency (GHz)    | Primary Purpose                   |
++=========+====================+===================================+
+|    1    |    23.8            | Water Vapor Burden                |
++---------+--------------------+-----------------------------------+
+|    2    |    31.4            | Water Vapor Burden                |
++---------+--------------------+-----------------------------------+
+|    3    |    50.3            | Surface Emissivity, Precipitation |
++---------+--------------------+-----------------------------------+
+|    4    |    51.76           | Temperature Sounding (Low Trop)   |
++---------+--------------------+-----------------------------------+
+|    5    |    52.8            | Temperature Sounding (Low Trop)   |
++---------+--------------------+-----------------------------------+
+|    6    | 53.596±0.115       | Temperature Sounding (Mid Trop)   |
++---------+--------------------+-----------------------------------+
+|    7    |    54.4            | Temperature Sounding (Mid Trop)   |
++---------+--------------------+-----------------------------------+
+|    8    |    54.94           | Temperature Sounding (Upper Trop) |
++---------+--------------------+-----------------------------------+
+|    9    |    55.5            | Temperature Sounding (Tropopause) |
++---------+--------------------+-----------------------------------+
+|   10    |    57.29           | Temperature Sounding (Strat)      |
++---------+--------------------+-----------------------------------+
+|   11    | 57.29±0.217        | Temperature Sounding (Strat)      |
++---------+--------------------+-----------------------------------+
+|   12    | 57.29±0.322±0.048  | Temperature Sounding (Strat)      |
++---------+--------------------+-----------------------------------+
+|   13    | 57.29±0.322±0.022  | Temperature Sounding (Strat)      |
++---------+--------------------+-----------------------------------+
+|   14    | 57.29±0.322±0.010  | Temperature Sounding (Strat)      |
++---------+--------------------+-----------------------------------+
+|   15    | 57.29±0.322±0.0045 | Temperature Sounding (Strat)      |
++---------+--------------------+-----------------------------------+
+|   16    |    88.2            | Clouds / Snow                     |
++---------+--------------------+-----------------------------------+
+|   17    |    183.31±7.0      | Water Vapor Sounding (Low Trop)   |
++---------+--------------------+-----------------------------------+
+|   18    |    183.31±7.0      | Water Vapor Sounding (Low Trop)   |
++---------+--------------------+-----------------------------------+
+|   19    |    183.31±4.5      | Water Vapor Sounding (Mid Trop)   |
++---------+--------------------+-----------------------------------+
+|   20    |    183.31±3.0      | Water Vapor Sounding (Mid Trop)   |
++---------+--------------------+-----------------------------------+
+|   21    |    183.31±1.8      | Water Vapor Sounding (Upper Trop) |
++---------+--------------------+-----------------------------------+
+|   22    |    183.31±1.0      | Water Vapor Sounding (Upper Trop) |
++---------+--------------------+-----------------------------------+
+
+Here are the weighting functions for the 22 ATMS channels.
+
+.. image:: ../_static/images/ATMS_weighting_functions.png
+    :width: 400
+    :alt: ATMS weighting functions
+
+.. seealso::
+
+  * ATMS SDR User's Guide <https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C01425>_
+  * ATMS ATBD <https://www.star.nesdis.noaa.gov/jpss/documents/ATBD/D0001-M01-S01-001_JPSS_ATBD_ATMS-SDR_B.pdf>_
+
+Data Access
+,,,,,,,,,,,
+
+* `NOAA CLASS <https://www.class.noaa.gov/>`_
+* `NOAA Open Data Dissemination -- JPSS <https://registry.opendata.aws/noaa-jpss/>`_
+
+Data Viewing
+,,,,,,,,,,,,
+
+* NOAA/NESDIS/STAR `<https://www.star.nesdis.noaa.gov/icvs/status_NPP_ATMS.php>`_
 
 NUCAPS
 ~~~~~~
