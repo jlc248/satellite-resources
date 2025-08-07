@@ -266,6 +266,32 @@ Data Viewing
 NUCAPS
 ~~~~~~
 
+NUCAPS, the NOAA Unique Combined Atmospheric Processing System, is not a sensor itself, but rather a sophisticated retrieval algorithm that produces Environmental Data Records (EDRs). It uses radiances from both the CrIS and ATMS instruments to create high-resolution profiles of temperature, moisture, and important trace gases such as ozone ($O_3$), carbon monoxide ($CO$), and methane ($CH_4$).
+
+The primary advantage of NUCAPS is its ability to combine the high spectral resolution of the CrIS infrared sounder with the cloud-penetrating capability of the ATMS microwave sounder. This allows NUCAPS to generate accurate atmospheric soundings in up to 80% cloud cover, providing a more complete picture of the atmosphere than either instrument could alone. These "all-weather" soundings are critical for weather forecasting, particularly for identifying atmospheric instability that can lead to severe weather.
+
+The NUCAPS product suite provides vertical profiles at the spatial resolution of the CrIS Field of Regard (FOR), which is approximately 50 km at nadir and 135 km at the limb. These soundings are widely used by operational weather forecasters in tools like AWIPS to assess the pre-convective environment.
+
+.. seealso::
+
+  * `Gridded NUCAPS Quick Guide <https://rammb2.cira.colostate.edu/wp-content/uploads/2020/01/QuickGuide_GriddedNUCAPS_final-1.pdf>`_
+  * `NUCAPS Soundings Quick Guide <http://cimss.ssec.wisc.edu/goes/OCLOFactSheetPDFs/QuickGuide_NUCAPS.pdf>`_
+  * `NUCAPS User's Guide <https://www.star.nesdis.noaa.gov/jpss/documents/UserGuides/NUCAPS_EUM.pdf>`_
+  * `NUCAPS ATBD <https://www.star.nesdis.noaa.gov/jpss/documents/ATBD/ATBD_NUCAPS_v3.1.pdf>`_
+  * `NUCAPS TOWR-S Guide <https://vlab.noaa.gov/web/towr-s/jpss-nucaps>`_
+
+Data Viewing
+,,,,,,,,,,,,
+
+* `SSEC Real-Time NUCAPS Soundings <https://www.ssec.wisc.edu/real-time/nucaps/>`_
+
+Data Access
+,,,,,,,,,,,
+
+* `NOAA CLASS <https://www.class.noaa.gov/>`_
+* `NOAA Open Data Dissemination -- JPSS <https://registry.opendata.aws/noaa-jpss/>`_
+
+
 MetOp
 -----
 
