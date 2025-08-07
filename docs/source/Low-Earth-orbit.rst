@@ -249,8 +249,8 @@ Here are the weighting functions for the 22 ATMS channels.
 
 .. seealso::
 
-  * ATMS SDR User's Guide <https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C01425>_
-  * ATMS ATBD <https://www.star.nesdis.noaa.gov/jpss/documents/ATBD/D0001-M01-S01-001_JPSS_ATBD_ATMS-SDR_B.pdf>_
+  * `ATMS SDR User's Guide <https://www.star.nesdis.noaa.gov/jpss/ATMS.php>`_
+  * `ATMS ATBD <https://www.star.nesdis.noaa.gov/jpss/documents/ATBD/D0001-M01-S01-001_JPSS_ATBD_ATMS-SDR_B.pdf>`_
 
 Data Access
 ,,,,,,,,,,,
@@ -261,7 +261,7 @@ Data Access
 Data Viewing
 ,,,,,,,,,,,,
 
-* NOAA/NESDIS/STAR `<https://www.star.nesdis.noaa.gov/icvs/status_NPP_ATMS.php>`_
+* `NOAA/NESDIS/STAR <https://www.star.nesdis.noaa.gov/icvs/status_NPP_ATMS.php>`_
 
 NUCAPS
 ~~~~~~
