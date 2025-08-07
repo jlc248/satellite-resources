@@ -283,7 +283,7 @@ The NUCAPS product suite provides vertical profiles at the spatial resolution of
 Data Viewing
 ,,,,,,,,,,,,
 
-* `SSEC Real-Time NUCAPS Soundings <https://www.ssec.wisc.edu/real-time/nucaps/>`_
+* `NOAA/NESDIS/OSPO NUCAPS Soundings <https://www.ospo.noaa.gov/products/atmosphere/soundings/heap/skewt/WORLD.html>`_
 
 Data Access
 ,,,,,,,,,,,
